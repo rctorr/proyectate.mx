@@ -48,10 +48,10 @@
         <img class="img-responsive" src="static/img/proyectate.png">
     </div><!-- Termina banner -->
 
-    <div class="container"><!-- Inicia contenedor para el resto de la página -->
+    <div class="container-fluid"><!-- Inicia contenedor para el resto de la página -->
         
         <!-- Inicia la definición de proyectate.mx -->
-        <div id="defproyectate">
+        <section id="defproyectate">
             <img class="img-responsive" src="static/img/Proyectate-logo.svg"> 
             <div class="row text-blanco">
                 <div class="col-md-4 text-center"> 
@@ -75,62 +75,68 @@
                     que mejoren tu entorno. ¡Empieza ya!</p> 
                 </div> 
             </div><!-- termina row de preguntas -->
-        </div><!-- Termina la definición de proyectate.mx -->
+        </section><!-- Termina la definición de proyectate.mx -->
 
-            <section id="funcproyectate">    
-                <div class="jumbotron text-center">
-            <h1>COMO FUNCIONA</h1>
-            <p>En proyectate.mx, te presentamos diversos módulos para que, paso a paso, aprendas a <b>planear</b>, <b>implementar</b>, <b>dar seguimiento</b>, <b>evaluar</b> y <b>comunicar</b> proyectos para mejorar tu entorno. </p>
-                    <p>¡Únete! ¡proyectate.mx es una plataforma fácil, <b>práctica </b>y de <b>libre acceso</b>!</p>
+        <!-- Inicia como funciona -->
+        <section id="funcproyectate" class="text-center">    
+            <h2>COMO FUNCIONA PROYECTATE</h2>
+            <p class="text-justify">En proyectate.mx, te presentamos diversos módulos para que,
+            paso a paso, aprendas a <b>planear</b>, <b>implementar</b>,
+            <b>dar seguimiento</b>, <b>evaluar</b> y <b>comunicar</b>
+            proyectos para mejorar tu entorno. ¡Únete! ¡proyectate.mx es
+            una plataforma fácil, práctica y de libre acceso!</p>
             <div id="iconografia">
-                    <img src="static/img/iconografia.png"> 
-                    
-                    </div>
+                <img class="img-responsive" src="static/img/iconografia-negro.png"> 
+            </div>
+        </section><!-- Termina sección como funciona -->
+
+        <!-- Inicia sección Registrate -->
+        <section id="registrate" class="bg-verde">
+            <div class="row iguales">
+                <div class="col-md-8">
+                    <h2>REGISTRATE</h2>
+                    <p>Registrándote en proyectate.mx, podrás almacenar tus
+                    proyectos en la plataforma y te daremos seguimiento para que
+                    los puedas implementar.</p>
                 </div>
-                
-                
-            </section>
-                
-            <section id="modproyectate">    
-                <div class="container">
+                <div class="col-md-4 vertical-align">
+                    <a href="registrarse.html" class="btn btn-verde btn-lg">REGISTRARSE</a>
+                </div>
+        </section><!-- Termina sección Registrate -->
+
+        <!-- Inicia sección de módulos -->
+        <section id="modproyectate" class="bg-negro">    
             <div class="row">
-                <div class = "col-md-4 text-center"> 
-                        <h1> CONOCE NUESTROS MÓDULOS</h1>
-                        <p> En proyectate.mx aprenderás cómo <b>planear, implementar, dar seguimiento, evaluar y comunicar</b> proyectos para mejorar tu entorno.</p>
-                    
-                    <button type="button" class="btn btn-primary btn-lg">MÓDULOS</button>
-                    
-                    </div> 
-                    
-                    <div class = "col-md-4 text-center"> 
-                        <h1> REGISTRATE CON NOSOTROS</h1>
-                        <p> Registrándote en proyectate.mx, podrás almacenar tus proyectos en la plataforma y te daremos seguimiento para que los puedas implementar</p>
-                        <button type="button" class="btn btn-primary btn-lg">REGISTRATE</button>
-                    </div> 
-                    
-                    <div class = "col-md-4 text-center"> 
-                        <h1> CONÓCENOS</h1>
-                        <p> proyectate.mx es una iniciativa de Jóvenes por los ODS México A.C. ¡Conoce nuestro trabajo promoviendo los Objetivos de Desarrollo Sostenible! </p> 
-                        <button type="button" class="btn btn-primary btn-lg">LEER MAS</button>
-                    </div> 
-            </div>
-            </div>
-                </section>
+                <div class="col-md-5 text-center"> 
+                    <h2>NUESTROS MÓDULOS</h2>
+                    <p class="text-justify">En proyectate.mx aprenderás
+                    cómo planear, implementar, dar seguimiento, evaluar y
+                    comunicar proyectos para mejorar tu entorno.</p>
+                    <a class="btn btn-rojo btn-lg">VER MÓDULOS</a>
+                </div> 
+                <div class="col-md-2 text-center">
+                </div> 
+                <div class="col-md-5 text-center"> 
+                    <h2>CONÓCENOS</h2>
+                    <p class="text-justify">proyectate.mx es una iniciativa
+                    de Jóvenes por los ODS México A.C. ¡Conoce nuestro
+                    trabajo promoviendo los Objetivos de Desarrollo
+                    Sostenible!</p>
+                    <a class="btn btn-negro btn-lg">LEER MÁS</a>
+                </div> 
+            </div><!-- Termina row -->
+        </section><!-- Termina sección de módulos -->
                 
                 
-                <!-- Inicia pié de página
-                    [Sección fija]
-                    [Se incluye en base.html] -->
-                <footer>
-                    <p> <b>Proyectate.mx es una iniciativa del Jóvenes por los ODS México AC.</b></p>
-                    <p>
-                        <a href="legal.html ">Conoce nuestro Aviso legal</a> |
-                        <a href="contacto.html ">Contáctanos</a> |
-                        <a href="aviso.html ">Aviso de Privacidad</a>
-                    </p>
-                </footer>
-                <!-- Termina pié de página
-                    [Sección fija] -->
+        <footer>
+            <p> <b>Proyectate.mx es una iniciativa del Jóvenes por los ODS México AC.</b></p>
+            <p>
+                <a href="legal.html ">Conoce nuestro Aviso legal</a> |
+                <a href="contacto.html ">Contáctanos</a> |
+                <a href="aviso.html ">Aviso de Privacidad</a>
+            </p>
+        </footer>
+
     </div><!-- Termina container -->
 </body>
 </html>

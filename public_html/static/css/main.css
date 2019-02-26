@@ -12,19 +12,36 @@ body {
 
 /*++++++++++ Estilos para inicio  +++++++++++++++*/
 #defproyectate {
-    padding-bottom: 25px;
+    padding: 25px 50px;
 }
 #defproyectate img {
     height: 70px;
-    margin: 35px auto 25px;
+    margin: 15px auto 25px;
     
 }
-
-#iconografia img{
-    width: 75%;
-    padding: 100px 0px 100px 0px;
+#funcproyectate {
+    padding: 25px 50px;    
+    background-color: #dddedd;
+    color: #000;
 }
-
+#funcproyectate h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#funcproyectate p {
+    padding: 10px 50px;
+}
+#registrate {
+    padding: 25px 100px;    
+    color: #fff;
+}
+#iconografia {
+    padding: 10px 50px;
+}
+#modproyectate {
+    background-color: #fff;
+    padding: 25px 100px;
+}
 
 
 /* Estilos para el pié de página */
@@ -55,8 +72,33 @@ footer p {
     background-color: #549526;
     border-color: #498221;
 }
+.btn-negro{
+    color: #fff;
+    background-color: #333;
+    border-color: #222;
+}
+
+.btn-negro:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+.btn-rojo{
+    color: #fff;
+    background-color: #e73d25;
+    border-color: #d73d25;
+}
+
+.btn-rojo:hover {
+    color: #fff;
+    background-color: #d63d25;
+    border-color: #cb3d25;
+}
 .bg-negro {
     background-color: #000;
+}
+.bg-verde {
+    background-color: #65b32e;
 }
 .text-blanco {
     color: #fff;
@@ -86,5 +128,16 @@ footer p {
 }
 .pb-0 {
     padding-bottom: 0;
+}
+/* Estilos para columnas iguales en un row */
+.iguales {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Estilo para alinear verticalmente */
+.vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 

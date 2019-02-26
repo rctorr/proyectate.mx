@@ -64,6 +64,18 @@ footer p {
 
 /*** Estilos de utilería generales ***/
 
+/* Estilos adicionales a bootstrap para proyectate.mx */
+.btn-verde {
+    color: #fff;
+    background-color: #65b32e;
+    border-color: #559627;
+}
+
+.btn-verde:hover {
+    color: #fff;
+    background-color: #549526;
+    border-color: #498221;
+}
 /* Corrigiendo estilos de bootstrap */
 .navbar-right {
     margin-right: 0;

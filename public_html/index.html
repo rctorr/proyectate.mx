@@ -42,17 +42,22 @@
             </div><!-- Termina nav-collapse -->
         </div><!-- Termina container-fluid -->
     </nav><!-- Termina navbar -->
+    
+    <!-- ============================================================== -->
+    <!-- [INICIA CONTENIDO] (No modificar nada antes de esta línea)     -->
  
     <!-- Inicia banner --> 
-    <div class="jumbotron mb-0 pt-0 pb-0 bg-negro"> 
-        <img class="img-responsive" src="static/img/proyectate.png">
+    <div class="jumbotron mb-0 pt-0 pb-0 bg-negro">
+        <a href="registrarse.html">
+          <img class="img-responsive" src="static/img/banner.jpg">
+        </a>
     </div><!-- Termina banner -->
 
     <div class="container-fluid"><!-- Inicia contenedor para el resto de la página -->
         
         <!-- Inicia la definición de proyectate.mx -->
         <section id="defproyectate">
-            <img class="img-responsive" src="static/img/Proyectate-logo.svg"> 
+            <img class="img-responsive" src="static/img/ima_proyectate.svg"> 
             <div class="row text-blanco">
                 <div class="col-md-4 text-center"> 
                     <h3>¿QUE ES PROYECTATE?</h3>
@@ -86,7 +91,7 @@
             proyectos para mejorar tu entorno. ¡Únete! ¡proyectate.mx es
             una plataforma fácil, práctica y de libre acceso!</p>
             <div id="iconografia">
-                <img class="img-responsive" src="static/img/iconografia-negro.png"> 
+                <img class="img-responsive center-block" src="static/img/iconografia-negro.png"> 
             </div>
         </section><!-- Termina sección como funciona -->
 
@@ -115,6 +120,7 @@
                     <a class="btn btn-rojo btn-lg">VER MÓDULOS</a>
                 </div> 
                 <div class="col-md-2 text-center">
+                    <img class="mt-60px hidden-xs hidden-sm" src="static/img/separador.svg" />
                 </div> 
                 <div class="col-md-5 text-center"> 
                     <h2>CONÓCENOS</h2>
@@ -127,16 +133,36 @@
             </div><!-- Termina row -->
         </section><!-- Termina sección de módulos -->
                 
+    <!-- [TERMINA CONTENIDO] (No modificar nada después de esta línea)  -->
+    <!-- ============================================================== -->
                 
         <footer>
+            <aside id="redes-sociales">
+                <a href="#"><img src="static/img/facebook.svg"></a>
+                <a href="#"><img src="static/img/youtube.svg"></a>
+                <a href="#"><img src="static/img/twitter.svg"></a>
+            </aside>
             <p> <b>Proyectate.mx es una iniciativa del Jóvenes por los ODS México AC.</b></p>
             <p>
-                <a href="legal.html ">Conoce nuestro Aviso legal</a> |
-                <a href="contacto.html ">Contáctanos</a> |
-                <a href="aviso.html ">Aviso de Privacidad</a>
+                <a class="pie-menu-op" href="legal.html ">Conoce nuestro Aviso legal</a> |
+                <a class="pie-menu-op" href="contacto.html ">Contáctanos</a> |
+                <a class="pie-menu-op" href="aviso.html ">Aviso de Privacidad</a>
             </p>
         </footer>
 
     </div><!-- Termina container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+        src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous">
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous">
+    </script>    
 </body>
 </html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24.438" height="99.44" viewBox="0 0 24.438 99.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 4.43px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="separador.svg" class="cls-1" d="M503,2338L523,2358.04l-19.125,19.18,18.255,18.3L503,2414.7l18.255,18.3" transform="translate(-500.781 -2335.78)"/>
+</svg>

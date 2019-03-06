@@ -1,0 +1,16 @@
+<svg id="facebook.svg" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3c5b9b;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Facebook" class="cls-1" cx="12.5" cy="12.5" r="12.5"/>
+  <path id="Forma_10" data-name="Forma 10" class="cls-2" d="M860.289,2539h-3.57v-8.44c-0.61-.03-1.145-0.06-1.72-0.08v-2.97h1.689c0-.66,0-1.24,0-1.82,0.016-2.44,1.28-3.68,3.754-3.69h2.487c0.017,0.33.039,0.58,0.041,0.83,0,0.67,0,1.33,0,2.09-0.665,0-1.237.01-1.808,0a0.758,0.758,0,0,0-.887.84c0,0.54,0,1.08,0,1.7H863c-0.113,1.05-.215,1.99-0.326,3.02h-2.387V2539Z" transform="translate(-847 -2518)"/>
+</svg>

@@ -9,7 +9,7 @@ body {
 
 /*++++++++++ Estilos para inicio  +++++++++++++++*/
 #defproyectate {
-    padding: 25px 50px 1px;
+    padding: 60px 50px 50px;
     position: relative;
 }
 #defproyectate::before {
@@ -31,7 +31,7 @@ body {
     
 }
 #funcproyectate {
-    padding: 75px 50px 75px;    
+    padding: 85px 50px 90px;    
     background-color: #dddedd;
     color: #000;
 }
@@ -40,10 +40,10 @@ body {
     margin-bottom: 20px;
 }
 #funcproyectate p {
-    padding: 10px 50px;
+    padding: 10px 0px;
 }
 #registrate {
-    padding: 0px 100px 30px;    
+    padding: 10px 100px 50px;    
     color: #fff;
     position: relative;
     z-index: 0;
@@ -77,11 +77,11 @@ body {
     background-repeat: no-repeat;
 }
 #iconografia {
-    padding: 10px 50px;
+    padding: 10px 75px;
 }
 #modproyectate {
     background-color: #fff;
-    padding: 25px 100px;
+    padding: 25px 100px 50px;
 }
 
 
@@ -218,6 +218,9 @@ footer p a:hover {
 }
 
 /* Estilos de paddings predefinidos */
+.p-25 {
+    padding: 25px
+}
 .pt-0 {
     padding-top: 0;
 }
@@ -238,6 +241,30 @@ footer p a:hover {
 
 
 /* Ajustes responsivo */
+@media (max-width: 767px) {
+    #defproyectate {
+        padding: 30px 20px 0px;
+    }
+    #funcproyectate {
+        padding: 85px 8% 90px;
+    }
+    #iconografia {
+        padding: 0px 0px;
+    }
+    #registrate {
+        padding: 20px 8% 50px;
+    }
+    #registrate::before{
+        width: 100%;
+    }
+    #modproyectate {
+        padding: 25px 8% 50px;
+    }
+    #modproyectate p {
+        text-align: center;
+    }
+}
+
 @media (min-width: 992px) {
     #registrate::before{
         width: 53%;
@@ -249,8 +276,32 @@ footer p a:hover {
 }
 
 @media (min-width: 1200px) {
+    #funcproyectate {
+        padding: 85px 10% 90px;    
+    }
+    #iconografia {
+        padding: 10px 50px;
+    }
+    #registrate {
+        padding: 50px 10% 70px;
+    }
     #registrate::before{
-        width: 38%;
+        width: 60%;
+    }
+    #modproyectate {
+        padding: 25px 10% 50px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #funcproyectate {
+        padding: 85px 20% 90px;    
+    }
+    #registrate {
+        padding: 50px 20% 70px;
+    }
+    #modproyectate {
+        padding: 25px 20% 50px;
     }
 }
 

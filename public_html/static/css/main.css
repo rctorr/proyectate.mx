@@ -116,6 +116,175 @@ footer p a:hover {
     color: #66B32E;
 }
 
+/*++++++++++ Estilos para acercadeuno  +++++++++++++++*/
+
+#acercadeuno {
+    background-color: #ffffff;
+    padding-bottom: 80px;
+}
+
+#acercadeuno h1, #acercadeuno h3 {
+    padding: 0px 10px;
+}
+
+#acercadeuno h1 {
+    font-weight: bold;
+}
+
+
+/*++++++++++ Estilos barraverde  +++++++++++++++*/
+#barraverde {
+    color: #fff;
+    position: relative;
+    z-index: 0;
+}
+#barraverde::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    right: 0px;
+    top: -50px;
+    bottom: -50px;
+    background-image: url("../img/brochazo_verde2.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#barraverde img {
+    height: 60px;
+    margin: 15px auto 25px;   
+}
+
+#barraverde h1 {
+    font-weight: bold;
+}
+
+/*++++++++++ Estilos para acercadedos  +++++++++++++++*/
+
+#acercadedos, #acercadecuatro {
+    background-color: #dddedd;
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+#acercadedos h2 {
+    padding: 0px 10px; 
+}
+
+#acercadedos img {
+    padding: 50px 0px 50px 0px;
+    margin: 0px auto;
+}
+
+
+/*++++++++++ Estilos para acercadetres  +++++++++++++++*/
+
+#acercadetres {
+    color: #fff;
+    background-color: #e73d25;
+    position: relative;
+    z-index: 0;
+}
+
+#acercadetres::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    width: 60%;
+    top: 0px;
+    bottom: -80px;
+    background-image: url("../img/brochazo_cafe-2.svg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+#acercadetres h2 {
+    font-weight: bold;
+}
+
+
+/*++++++++++ Estilos para acercadecuatro  +++++++++++++++*/
+#acercadecuatro {
+    background-color: #ffffff;
+}
+
+#acercadecuatro h1 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#acercadecuatro img {
+    padding: 0px 0px 50px 0px;
+    margin: 0px auto;
+}
+
+/*++++++++++ Estilos para acercadecinco  +++++++++++++++*/
+
+#acercadecinco {
+    background-color: #eaeaea;
+}
+
+#acercadecinco h4, #acercadecinco h1 {
+    font-weight: bold;
+}
+
+/*++++++++++ Estilos para legal  +++++++++++++++*/
+
+#privacidad {
+    background-color: #f2f2f2;
+     padding: 30px 0px 30px 0px;    
+}
+
+#privacidad .row .col-md-4 {
+    background-image: url("../img/privacidad_legal.svg");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 90px 120px 120px 90px;
+}
+#privacidad .row{
+    width: 100%;
+}
+#privacidad .row .col-md-4 h1 {
+     font-weight: bold;
+}
+
+#disclaimer {
+    background-color: #dddedd;
+     padding: 30px 0px 30px 0px;    
+}
+
+#disclaimer .row .col-md-4 {
+    background-image: url("../img/disclaimer_legal.svg");
+    background-size: cover;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding: 90px 120px 120px 90px;
+}
+#disclaimer .row{
+    width: 100%;
+}
+#disclaimer .row .col-md-4 h1 {
+     font-weight: bold;
+}
+
+#disclaimer .col-md-7 {
+    padding:30px 120px 30px 120px; 
+}
+
+
+
+
+
+
+
 
 /*** Estilos de utilería generales ***/
 
@@ -227,11 +396,16 @@ footer p a:hover {
 .pb-0 {
     padding-bottom: 0;
 }
+.p-seccion {
+    padding: 25px 100px 25px;
+}
+
 /* Estilos para columnas iguales en un row */
 .iguales {
     display: flex;
     flex-wrap: wrap;
 }
+
 /* Estilo para alinear verticalmente */
 .vertical-align {
     display: flex;

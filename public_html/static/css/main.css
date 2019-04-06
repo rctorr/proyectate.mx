@@ -195,12 +195,12 @@ footer p a:hover {
     position: absolute;
     z-index: -1;
     left: 0px;
-    width: 60%;
+    width: 100%;
     top: 0px;
     bottom: -80px;
     background-image: url("../img/brochazo_cafe-2.svg");
-    background-size: cover;
-    background-position: center top;
+    background-size: 80% 100%;
+    background-position: left top;
     background-repeat: no-repeat;
 }
 
@@ -421,6 +421,9 @@ footer p a:hover {
 .p-seccion {
     padding: 25px 100px 25px;
 }
+.p-seccion h1, .p-seccion h2, .p-seccion h3 {
+    display: inline-block;
+}
 
 /* Estilos para columnas iguales en un row */
 .iguales {
@@ -436,8 +439,11 @@ footer p a:hover {
 }
 
 
-/* Ajustes responsivo */
+/*******************************************************************************
+  Ajustes responsivo
+*******************************************************************************/
 @media (max-width: 767px) {
+    /*** Iinicio ***/
     #defproyectate {
         padding: 30px 20px 0px;
     }
@@ -458,6 +464,116 @@ footer p a:hover {
     }
     #modproyectate p {
         text-align: center;
+    }
+    /*** Acerca de ***/
+    #acercadeuno {
+        padding-bottom: 80px;
+    }
+    #acercadeuno h1, #acercadeuno h3 {
+        padding: 0px 10px;
+    }
+    #acercadeuno h1 {
+        text-align: left;
+        font-size: 28px;
+    }
+    #acercadeuno h3 {
+        font-size: 18px;
+    }
+    .p-seccion {
+        padding: 25px 20px 25px;
+    }
+    #barraverde {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #barraverde::after {
+        background-size: 160% 100%;
+    }
+    #barraverde img {
+        height: 25px;
+        margin: 10px auto 20px;
+        display: inline-block;
+    }
+    #barraverde h1 {
+        font-size: 28px;
+    }
+    #acercadedos {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    #acercadedos h2 {
+        padding: 0px;
+        font-size: 28px;
+    }
+    #acercadedos h3 {
+        font-size: 18px;
+    }
+    #acercadedos img {
+        padding: 10px 0px 10px 0px;
+        margin: 0px auto;
+        width: 100%
+    }
+    #acercadetres {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    #acercadetres::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        left: 0px;
+        width: 100%;
+        top: 0px;
+        bottom: -60px;
+        background-image: url("../img/brochazo_cafe-2.svg");
+        background-size: 100% 100%;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+    }
+    #acercadetres h2 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    #acercadetres p {
+        font-size: 18px;
+    }
+    
+
+    /*++++++++++ Estilos para acercadecuatro  +++++++++++++++*/
+    #acercadecuatro {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #acercadecuatro h1 {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    #acercadecuatro img {
+        padding: 0px 0px 50px 0px;
+        margin: 0px auto;
+    }
+
+
+    /*++++++++++ Estilos para acercadecinco  +++++++++++++++*/
+
+    #acercadecinco {
+        background-color: #eaeaea;
+    }
+
+    #acercadecinco h4, #acercadecinco h1 {
+        font-weight: bold;
+    }
+    
+    /********** Estilos genéricos **********************/
+    .p-xs {
+        padding: 20px;
+    }
+    .p-seccion {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 

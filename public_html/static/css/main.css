@@ -7,6 +7,39 @@ body {
     padding-top: 50px;
 }
 
+/* Estilos para el pié de página */
+footer {
+    width: 100%;
+    padding: 15px 0px;
+    background-color: #000000;
+    margin-top: 15px;
+    color: #fff;
+    position: relative;
+}
+
+#redes-sociales {
+    margin: 0px auto 20px;
+    text-align: center;
+}
+
+#redes-sociales a {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+footer a.btn:hover {
+    color: #66B32E;
+}
+
+
 /*++++++++++ Estilos para inicio  +++++++++++++++*/
 #defproyectate {
     padding: 60px 50px 50px;
@@ -84,38 +117,6 @@ body {
     padding: 25px 100px 50px;
 }
 
-
-/* Estilos para el pié de página */
-footer {
-    width: 100%;
-    padding: 15px 0px;
-    background-color: #000000;
-    margin-top: 15px;
-    color: #fff;
-    position: relative;
-}
-
-#redes-sociales {
-    margin: 0px auto 20px;
-    text-align: center;
-}
-
-#redes-sociales a {
-    display: inline-block;
-    margin: 0px 5px;
-}
-
-footer p {
-    text-align: center;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: underline;
-}
-footer a.btn:hover {
-    color: #66B32E;
-}
 
 /*********** Estilos para Acerca de *************/
 #acercade02 {
@@ -311,6 +312,10 @@ footer a.btn:hover {
     margin-top: 20px;
 }
 /*** Estilos de paddings predefinidos ***/
+.ph-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .p-25 {
     padding: 25px
 }
@@ -336,8 +341,16 @@ footer a.btn:hover {
     margin: 0px -15px;  /* Se anula el padding del container */
     padding: 20px 20px;  /* Se asigna el nuevo padding */
 }
+.banner {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 
-/* Corrigiendo estilos de bootstrap */
+
+/**************************************
+  Corrigiendo estilos de bootstrap
+**************************************/
 .section h1, .section h2, .section h3, .section p {
     display: inline-block;
 }
@@ -548,6 +561,9 @@ footer a.btn:hover {
     /*** Estilos para bloques o secciones ***/
     .section {
         padding: 80px 15%;  /* Se asigna el nuevo padding */
+    }
+    .banner img {
+        width: 100%;
     }
     #acercade01 {
         padding-top: 85px;

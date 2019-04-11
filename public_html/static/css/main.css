@@ -41,80 +41,59 @@ footer a.btn:hover {
 
 
 /*++++++++++ Estilos para inicio  +++++++++++++++*/
-#defproyectate {
-    padding: 60px 50px 50px;
-    position: relative;
-}
-#defproyectate::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: -1px;
-    right: -1px;
-    bottom: -50px;
-    height: 50px;
-    background-image: url("../img/proyectate_brochazo_negro.svg");
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-}
-#defproyectate img {
-    height: 40px;
-    margin: 15px auto 25px;
-    
-}
-#funcproyectate {
-    padding: 85px 50px 90px;    
-    background-color: #dddedd;
-    color: #000;
-}
-#funcproyectate h2 {
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-#funcproyectate p {
-    padding: 10px 0px;
-}
-#registrate {
-    padding: 10px 100px 50px;    
-    color: #fff;
+#index01 {
     position: relative;
     z-index: 0;
 }
-#registrate::after {
+#index01::before {
     content: "";
     display: block;
     position: absolute;
     z-index: -1;
     left: 0px;
     right: 0px;
-    top: -50px;
-    height: 50px;
-    background-image: url("../img/brochazo_verde.svg");
-    background-size: cover;
+    top: 0px;
+    bottom: -50px;
+    background-image: url("../img/proyectate_brochazo_negro.svg");
+    background-size: 190% 100%;
     background-position: center top;
     background-repeat: no-repeat;
 }
-#registrate::before{
+#index02 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#index03 {
+    position: relative;
+    z-index: 0;
+}
+#index03::before {
     content: "";
     display: block;
     position: absolute;
-    z-index: 0;
+    z-index: -1;
+    left: 0px;
     right: 0px;
-    width: 100%;
-    top: -50px;
+    top: -30px;
     bottom: 0px;
-    background-image: url("../img/brochazo_cafe-1.svg");
-    background-size: cover;
-    background-position: right top;
+    background-image: url("../img/brochazo_verde.svg");
+    background-size: 250% 100%;
+    background-position: center center;
     background-repeat: no-repeat;
 }
-#iconografia {
-    padding: 10px 75px;
-}
-#modproyectate {
-    background-color: #fff;
-    padding: 25px 100px 50px;
+#index03::after{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    left: 0px;
+    top: -30px;
+    bottom: 0px;
+    background-image: url("../img/brochazo_cafe-1.svg");
+    background-size: 150% 100%;
+    background-position: 25px bottom;
+    background-repeat: no-repeat;
 }
 
 
@@ -304,6 +283,9 @@ footer a.btn:hover {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.col-mb {
+    margin-bottom: 20px;
+}
 .btn-mv {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -390,35 +372,16 @@ footer a.btn:hover {
 /*******************************************************************************
   Ajustes responsivo
 *******************************************************************************/
-@media (max-width: 767px) {
-    /*** Iinicio ***/
-    #defproyectate {
-        padding: 30px 20px 0px;
-    }
-    #funcproyectate {
-        padding: 85px 8% 90px;
-    }
-    #iconografia {
-        padding: 0px 0px;
-    }
-    #registrate {
-        padding: 20px 8% 50px;
-    }
-    #registrate::before{
-        width: 100%;
-    }
-    #modproyectate {
-        padding: 25px 8% 50px;
-    }
-    #modproyectate p {
-        text-align: center;
-    }
-}
-
 @media (min-width: 768px) {
     /*** Estilos para bloques o secciones ***/
     .section {
         padding: 40px 50px;  /* Se asigna el nuevo padding */
+    }
+    #index01::before {
+        background-size: 150% 100%;
+    }
+    #index02 {
+        padding-top: 75px;
     }
     #acercade02::after {
         background-size: 140% 100%;
@@ -449,12 +412,12 @@ footer a.btn:hover {
 }
 
 @media (min-width: 992px) {
-    #registrate::before{
-        width: 53%;
-    }
     #redes-sociales {
         position: absolute;
         right: 50px;
+    }
+    #index01::before {
+        background-size: 120% 100%;
     }
     .md-mb {
         margin-bottom: 20px;
@@ -480,20 +443,8 @@ footer a.btn:hover {
 }
 
 @media (min-width: 1200px) {
-    #funcproyectate {
-        padding: 85px 10% 90px;    
-    }
-    #iconografia {
-        padding: 10px 50px;
-    }
-    #registrate {
-        padding: 50px 10% 70px;
-    }
-    #registrate::before{
-        width: 60%;
-    }
-    #modproyectate {
-        padding: 25px 10% 50px;
+    #index01::before {
+        background-size: 100% 100%;
     }
     /*** Estilos para bloques o secciones ***/
     .section {
@@ -525,15 +476,6 @@ footer a.btn:hover {
 }
 
 @media (min-width: 1400px) {
-    #funcproyectate {
-        padding: 85px 20% 90px;    
-    }
-    #registrate {
-        padding: 50px 20% 70px;
-    }
-    #modproyectate {
-        padding: 25px 20% 50px;
-    }
     /*** Estilos para bloques o secciones ***/
     .section {
         padding: 70px 10%;  /* Se asigna el nuevo padding */

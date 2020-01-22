@@ -1,3 +1,8 @@
+/* Variables */
+:root {
+    --verde: #66B32E;
+}
+
 body {
     background-color: #000000;
     font-family: "Roboto";
@@ -36,7 +41,7 @@ footer a {
     text-decoration: underline;
 }
 footer a.btn:hover {
-    color: #66B32E;
+    color: var(--verde);
 }
 
 /*** Estilos para bloques o secciones ***/
@@ -223,7 +228,7 @@ footer a.btn:hover {
     width: 70px;
 }
 .categoria .modulo {
-    border: 1px solid #66B32E;
+    border: 1px solid var(--verde);
     border-radius: 25px;
     padding: 5px;
 }
@@ -235,7 +240,7 @@ footer a.btn:hover {
     margin: 0px;
 }
 .categoria .modulo.terminado p {
-    color: #66B32E;
+    color: var(--verde);
 }
 .categoria .barra {
     margin: 0px 0px;
@@ -245,12 +250,18 @@ footer a.btn:hover {
     margin: 10px 0px 2px;
 }
 .categoria .barra .progress-bar-green {
-    background-color: #66B32E;
+    background-color: var(--verde);
 }
 #categoria01 {
-    background-image: url("../img/proyectate_brochazo_negro.svg");
-    background-size: 250% 100%;
+    background-image: url("../img/bg_planeacion.png");
+    background-size: 200% 100%;
     background-position: center center;
+    background-repeat: no-repeat;
+}
+#categoria02 {
+    background-image: url("../img/bg_imple.png");
+    background-size: 150% 100%;
+    background-position: left center;
     background-repeat: no-repeat;
 }
 
@@ -302,8 +313,14 @@ footer a.btn:hover {
 .bg-black {
     background-color: #000;
 }
+.bg-black-75 {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.bg-black-50 {
+    background-color: rgba(0, 0, 0, 0.50);
+}
 .bg-green {
-    background-color: #66B32E;
+    background-color: var(--verde);
 }
 .bg-red {
     background-color: #e73d25;
@@ -315,13 +332,16 @@ footer a.btn:hover {
 .text-white {
     color: #fff;
 }
+.text-green {
+    color: var(--verde);
+}
 /*** Estilos de texto ***/
 .text-bold {
     font-weight: bold;
 }
 /*** Color de fondo en las opciones del menú ***/
 .navbar-inverse .navbar-nav > .active > a {
-    background-color: #66b32e;
+    background-color: var(--verde);
 }
 /*** Estilos de márgenes predefinidos ***/
 .mt-0 {

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
@@ -57,14 +56,12 @@
                    <div class="login-titulo">
                     <h1 class="text-bold">COMENZEMOS</h1>
                 </div>
-                   <form action="" class="">
+                   <form action="" class="" id="comenzar">
                        <div class="form-group">
-                          <label for= "correelectronico">Correo electronico:</label>
-                          <input class="form-control" id="correo electronico" type="text" placeholder="">
+                          <input class="form-control" id="correo electronico" type="text" placeholder="Correo electronico">
                        </div>
                         <div class="form-group">
-                            <label for= "contraseña">Contraseña:</label>
-                            <input class="form-control" id="contraseña" type="text" placeholder="">
+                            <input class="form-control" id="contraseña" type="text" placeholder="Contraseña">
                         </div>
                        <div class="form-group">
                         <h5 class="text-right">Recuperar contraseña</h5>
@@ -75,7 +72,7 @@
                             </label>
 
                         </div>
-                        <a href="" class="btn btn-verde btn-lg center-block">LOGIN</a>
+                        <a href="" class="btn btn-verde btn-lg center-block" onclick="">LOGIN</a>
                     </form>
                 </div>
            </div>
@@ -85,28 +82,30 @@
                 <div class="login-titulo-dos">
                     <h1 class="text-bold">REGISTRATE</h1>
                 </div>
-                <form action="" class="">
+                <form action="" class="" id="registro">
                     <div class="form-group">
-                        <label for= "Nombre"></label>
-                        <input class="form-control" id="Nombre" type="text" placeholder="Nombre">
-                        <label for= "Apellido"></label>
-
-                        <label for= "Correo electrónico"></label>
-                        <input class="form-control" id="Correo electrónico" type="text" placeholder="Correo electrónico">
-                        <label for= "Contraseña"></label>
-                        <input class="form-control" id="Contraseña" type="text" placeholder="Contraseña">
-                        <label for= "Contraseña"></label>
-                        <input class="form-control" id="Contraseña" type="text" placeholder="Vuelve a escribir la contraseña">
-                        <label for= "Genero"></label>
-                        <select class="form-control" id="Genero">
+                        <input class="form-control" id="nombre" type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="email" type="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="contrasenia" type="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="contrasenia2" type="password" placeholder="Vuelve a escribir la contraseña" required>
+                    </div>  
+                    <div class="form-group">
+                        <select class="form-control" id="Genero" required>
                             <option>Genero</option>
                             <option>Femenino</option>
                             <option>Masculino</option>
                             <option>Otro</option>
                             <option>Prefiero no decirlo</option>
                         </select>
-                        <label for= "Edad"></label>
-                        <select class="form-control" id="Edad">
+                     </div>
+                    <div class="form-group">
+                        <select class="form-control" id="Edad" required>
                             <option>Edad</option>
                             <option>Menos de 18 años</option>
                             <option>De 18 a 24 años</option>
@@ -114,8 +113,9 @@
                             <option>Mas de 30 años</option>
                             <option>Prefiero no decirlo</option>
                         </select>
-                  <label for= "País"></label>
-                        <select class="form-control" id="País">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="País" required>
                            <option>País</option>
                             <option>México</option>
                             <option>Afganistán</option>
@@ -351,14 +351,13 @@
                             <option>Zambia</option>
                             <option>Zimbabue</option>
                         </select>
-        
                     </div>
-                    <a href="" class="btn btn-verde btn-lg center-block">REGÍSTRATE</a>
+                    <a href="" class="btn btn-verde btn-lg center-block" onclick="validarRegistro()">REGÍSTRATE</a>
                 </form>
             </div>
        </div>
     </div>
-        </div>
+</div>
         
     
     <!-- [TERMINA CONTENIDO] (No modificar nada después de esta línea)  -->

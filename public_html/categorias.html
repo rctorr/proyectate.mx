@@ -69,77 +69,129 @@
                     <h4 class="subtitulo text-bold text-green">5 MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
                     <p class="text-justify">Hay algo que no está bien en tu entorno y te has dado cuenta de ello. ¿Cuáles pasos tienes que seguir para aprender a identificar problemas y para empezar a planear soluciones para resolverlos?</p>
                 </aside> 
-            </div><!-- Termina row -->
-            <div id="carousel-cat01" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-cat01" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-cat01" data-slide-to="1"></li>
-                <li data-target="#carousel-cat01" data-slide-to="2"></li>
-              </ol>
+            </div><!-- Termina row detalle -->
+            <!-- Inicia carousel -->
+            <div class="MultiCarousel" id="MultiCarousel01">
+               <div class="MultiCarousel-Container">
+                   <!-- Botones izq y der -->
+                   <div class="Left" onclick="leftClick(this)">
+                       <button class="btn btn-link">
+                           <span class="glyphicon glyphicon-chevron-left text-green"></span>
+                       </button>
+                   </div>
+                   <div class="Right" onclick="rightClick(this)">
+                        <button class="btn btn-link">
+                            <span class="glyphicon glyphicon-chevron-right text-green"></span>
+                        </button>
+                   </div>
+                   <!-- Contiene los elementos del Carousel -->
+                   <div class="Carousel-viewer">
+                     <div class="Carousel-slider">
+                        <div class="Carousel-item">
+                              <div class="modulo text-center terminado">
+                                <h3 class="text-bold">1</h3>
+                                <p>Identificación de problemas</p>
+                              </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
 
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="static/img/t-360x150.png" alt="360x150" data-holder-rendered="true" class="img-responsive">
-                  <div class="carousel-caption">
-                      <div class="modulo text-center terminado">
-                        <img src="static/img/ico-planeacion-verde.png" alt="icono planeación">
-                        <p>Identificación de problemas</p>
-                      </div>
-                      <div class="barra">
-                          <div class="progress">
-                              <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                                <span class="sr-only">100% Complete</span>
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">2</h3>
+                                <p>Identificación de problemas</p>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="static/img/t-360x150.png" alt="360x150" data-holder-rendered="true" class="img-responsive">
-                  <div class="carousel-caption">
-                      <div class="modulo text-center">
-                        <img src="static/img/ico-planeacion-blanco.png" alt="icono planeación">
-                        <p>Identificación de problemas</p>
-                      </div>
-                      <div class="barra">
-                          <div class="progress">
-                              <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                <span class="sr-only">50% Complete</span>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="static/img/t-360x150.png" alt="360x150" data-holder-rendered="true" class="img-responsive">
-                  <div class="carousel-caption">
-                      <div class="modulo text-center">
-                        <img src="static/img/ico-planeacion-blanco.png" alt="icono planeación">
-                        <p>Identificación de problemas</p>
-                      </div>
-                      <div class="barra">
-                          <div class="progress">
-                              <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                <span class="sr-only">0% Complete</span>
+                        </div>
+                        
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">3</h3>
+                                <p>Identificación de problemas</p>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-cat01" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carousel-cat01" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                        
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">4</h3>
+                                <p>Identificación de problemas</p>
+                              </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                        
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">5</h3>
+                                <p>Identificación de problemas</p>
+                              </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                        
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">6</h3>
+                                <p>Identificación de problemas</p>
+                              </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                        
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">7</h3>
+                                <p>Identificación de problemas</p>
+                              </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                        
+                     </div><!-- Termina Carousel slider -->
+                   </div><!-- Termina Carousel-viewer -->
+               </div><!-- Termina row que contiene a la los elementos de la galería -->
+               <div class="MultiCarousel-indicators">
+                    <!-- Indicators -->
+                    <ol>
+                      <li data-target="#MultiCarousel01" data-slide-to="0" class="active"></li>
+                      <li data-target="#MultiCarousel01" data-slide-to="1"></li>
+                      <li data-target="#MultiCarousel01" data-slide-to="2"></li>
+                    </ol>
+               </div>
+                        
+            </div><!-- Termina MultiCarousel -->
+              
         </section><!-- Termina categoria01 -->
 
         <!-- Inicia Categoría 02: Implementación -->
@@ -153,79 +205,185 @@
                     <h4 class="subtitulo text-bold text-green">5 MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
                     <p class="text-justify">Hay algo que no está bien en tu entorno y te has dado cuenta de ello. ¿Cuáles pasos tienes que seguir para aprender a identificar problemas y para empezar a planear soluciones para resolverlos?</p>
                 </aside> 
-            </div><!-- Termina row -->
-            <div id="carousel-cat02" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-cat02" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-cat02" data-slide-to="1"></li>
-                <li data-target="#carousel-cat02" data-slide-to="2"></li>
-              </ol>
+            </div><!-- Termina row detalle -->
+            <div class="MultiCarousel" id="MultiCarousel02">
+               <div class="MultiCarousel-Container">
+                   <!-- Botones izq y der -->
+                   <div class="Left" onclick="leftClick(this)">
+                       <button class="btn btn-link">
+                           <span class="glyphicon glyphicon-chevron-left text-green"></span>
+                       </button>
+                   </div>
+                   <div class="Right" onclick="rightClick(this)">
+                        <button class="btn btn-link">
+                            <span class="glyphicon glyphicon-chevron-right text-green"></span>
+                        </button>
+                   </div>
+                   <!-- Contiene los elementos del Carousel -->
+                   <div class="Carousel-viewer">
+                     <div class="Carousel-slider">
+                        <div class="Carousel-item">
+                              <div class="modulo text-center terminado">
+                                <h3 class="text-bold">1</h3>
+                                <p>Identificación de problemas</p>
+                              </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
 
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="static/img/t-360x150.png" alt="360x150" data-holder-rendered="true" class="img-responsive">
-                  <div class="carousel-caption">
-                      <div class="modulo text-center">
-                        <h4 class="text-bold">1</h4>
-                        <p>Identificación de problemas</p>
-                      </div>
-                      <div class="barra">
-                          <div class="progress">
-                              <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
-                                <span class="sr-only">100% Complete</span>
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">2</h3>
+                                <p>Identificación de problemas</p>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="static/img/t-360x150.png" alt="360x150" data-holder-rendered="true" class="img-responsive">
-                  <div class="carousel-caption">
-                      <div class="modulo text-center">
-                        <img src="static/img/ico-planeacion-blanco.png" alt="icono planeación">
-                        <p>Identificación de problemas</p>
-                      </div>
-                      <div class="barra">
-                          <div class="progress">
-                              <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                <span class="sr-only">50% Complete</span>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="static/img/t-360x150.png" alt="360x150" data-holder-rendered="true" class="img-responsive">
-                  <div class="carousel-caption">
-                      <div class="modulo text-center">
-                        <img src="static/img/ico-planeacion-blanco.png" alt="icono planeación">
-                        <p>Identificación de problemas</p>
-                      </div>
-                      <div class="barra">
-                          <div class="progress">
-                              <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                                <span class="sr-only">0% Complete</span>
+                        </div>
+                        
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">3</h3>
+                                <p>Identificación de problemas</p>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-cat01" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carousel-cat01" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                        
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">4</h3>
+                                <p>Identificación de problemas</p>
+                              </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                        
+                     </div><!-- Termina Carousel slider -->
+                   </div><!-- Termina Carousel-viewer -->
+               </div><!-- Termina row que contiene a la los elementos de la galería -->
+               <div class="MultiCarousel-indicators">
+                    <!-- Indicators -->
+                    <ol>
+                      <li data-target="#MultiCarousel02" data-slide-to="0" class="active"></li>
+                      <li data-target="#MultiCarousel02" data-slide-to="1"></li>
+                      <li data-target="#MultiCarousel02" data-slide-to="2"></li>
+                    </ol>
+               </div>
+                        
+            </div><!-- Termina MultiCarousel -->
         </section><!-- Termina categoria02 -->
    
+        <!-- Inicia Categoría 03: Seguimiento -->
+        <section id="categoria02" class="section categoria">
+            <div class="row detalle">
+                <aside class="col-xs-12">
+                    <img src="static/img/ico-imple-blanco.png" alt="icono implementación"  class="img-responsive" />
+                </aside>
+                <aside class="col-xs-12">
+                    <h3 class="text-bold">SEGUIMIENTO</h3>
+                    <h4 class="subtitulo text-bold text-green">5 MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
+                    <p class="text-justify">Hay algo que no está bien en tu entorno y te has dado cuenta de ello. ¿Cuáles pasos tienes que seguir para aprender a identificar problemas y para empezar a planear soluciones para resolverlos?</p>
+                </aside> 
+            </div><!-- Termina row detalle -->
+            <div class="MultiCarousel" id="MultiCarousel02">
+               <div class="MultiCarousel-Container">
+                   <!-- Botones izq y der -->
+                   <div class="Left" onclick="leftClick(this)">
+                       <button class="btn btn-link">
+                           <span class="glyphicon glyphicon-chevron-left text-green"></span>
+                       </button>
+                   </div>
+                   <div class="Right" onclick="rightClick(this)">
+                        <button class="btn btn-link">
+                            <span class="glyphicon glyphicon-chevron-right text-green"></span>
+                        </button>
+                   </div>
+                   <!-- Contiene los elementos del Carousel -->
+                   <div class="Carousel-viewer">
+                     <div class="Carousel-slider">
+                        <div class="Carousel-item">
+                              <div class="modulo text-center terminado">
+                                <h3 class="text-bold">1</h3>
+                                <p>Identificación de problemas</p>
+                              </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">2</h3>
+                                <p>Identificación de problemas</p>
+                              </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                        
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">3</h3>
+                                <p>Identificación de problemas</p>
+                              </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                        
+                        <div class="Carousel-item">
+                              <div class="modulo text-center">
+                                <h3 class="text-bold">4</h3>
+                                <p>Identificación de problemas</p>
+                              </div>
+                              <div class="barra">
+                                  <div class="progress">
+                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                        
+                     </div><!-- Termina Carousel slider -->
+                   </div><!-- Termina Carousel-viewer -->
+               </div><!-- Termina row que contiene a la los elementos de la galería -->
+               <div class="MultiCarousel-indicators">
+                    <!-- Indicators -->
+                    <ol>
+                      <li data-target="#MultiCarousel02" data-slide-to="0" class="active"></li>
+                      <li data-target="#MultiCarousel02" data-slide-to="1"></li>
+                      <li data-target="#MultiCarousel02" data-slide-to="2"></li>
+                    </ol>
+               </div>
+                        
+            </div><!-- Termina MultiCarousel -->
+        </section><!-- Termina categoria03 -->
+
     </div><!-- Termina contenedor-fluid -->
     
 
@@ -262,5 +420,10 @@
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous">
     </script>
+    <!-- Incluye script principal -->
+    <script
+        src="static/js/main.js">
+    </script>
+    
 </body>
 </html>

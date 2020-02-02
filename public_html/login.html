@@ -90,7 +90,8 @@
                         <input class="form-control" id="email" type="email" placeholder="Correo electrónico" required>
                     </div>
                     <div class="form-group">
-                        <input class="form-control" id="contrasenia" type="password" placeholder="Contraseña" required>
+                        <input class="form-control" id="contrasenia" type="password" placeholder="Contraseña" pattern="[A-Za-z0-9]{10,}" title="La contraseña debe tener 10 caracteres o más" required>
+                        <!--pattern=".{10,}"  creará password que deberá contener 10 o más carácteres-->
                     </div>
                     <div class="form-group">
                         <input class="form-control" id="contrasenia2" type="password" placeholder="Vuelve a escribir la contraseña" required>
@@ -352,7 +353,8 @@
                             <option>Zimbabue</option>
                         </select>
                     </div>
-                    <a href="" class="btn btn-verde btn-lg center-block" onclick="validarRegistro()">REGÍSTRATE</a>
+                    <input class="btn btn-verde btn-lg center-block" type="submit" value="REGÍSTRATE">
+                    <!--<a href="" class="btn btn-verde btn-lg center-block" >REGÍSTRATE</a>-->
                 </form>
             </div>
        </div>
@@ -381,6 +383,7 @@
         </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="static/js/validaciones.js"></script>
     <script
         src="https://code.jquery.com/jquery-1.12.4.min.js"
         integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
@@ -392,5 +395,6 @@
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous">
     </script>    
+    
 </body>
 </html>

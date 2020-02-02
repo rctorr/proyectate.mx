@@ -275,9 +275,9 @@ footer a.btn:hover {
     padding: 5px;
     width: var(--carousel-item-ancho);
 }
-.categoria .modulo h3 {
-    margin: 5px 0;
-    display: block;
+.categoria .modulo img {
+    width: 25%;
+    margin: 5px;
 }
 .categoria .modulo p {
     margin: 0px;
@@ -323,7 +323,7 @@ footer a.btn:hover {
     background-color: #fff;
 }
 #categoria01 {
-    background-image: url("../img/bg_planeacion.png");
+    background-image: url("../img/bg_planeacion-movil.png");
     background-size: 200% 100%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -339,13 +339,61 @@ footer a.btn:hover {
     background-color: rgba(0,0,0,0.3);
 }
 #categoria02 {
-    background-image: url("../img/bg_imple.png");
-    background-size: 150% 100%;
-    background-position: left center;
+    background-image: url("../img/bg_imple-movil.png");
+    background-size: 200% 100%;
+    background-position: 60% center;
     background-repeat: no-repeat;
     position: relative;
 }
 #categoria02::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    background-color: rgba(0,0,0,0.4);
+}
+#categoria03 {
+    background-image: url("../img/bg_segui-movil.png");
+    background-size: 200% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#categoria03::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    background-color: rgba(0,0,0,0.4);
+}
+#categoria04 {
+    background-image: url("../img/bg_evaluacion-movil.png");
+    background-size: auto 100%;
+    background-position: 60% center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#categoria04::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    background-color: rgba(0,0,0,0.4);
+}
+#categoria05 {
+    background-image: url("../img/bg_comunicacion-movil.png");
+    background-size: 200% 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#categoria05::before {
     content: "";
     position: absolute;
     top: 30px;

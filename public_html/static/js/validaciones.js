@@ -9,7 +9,8 @@ function validarPass(){
         alert("Debe contener un minimo de 10 caracateres");
     for(i=0; i<contrasenia.length; i++){
       if (mayusculas.indexOf(contrasenia.charAt(i),0)!=-1){
-         return 1;
+         alert("Debe contener al menos una letra mayuscula");
+          //return 1;
       }
    }
     }

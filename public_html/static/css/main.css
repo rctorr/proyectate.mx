@@ -327,12 +327,32 @@ footer a.btn:hover {
     background-size: 200% 100%;
     background-position: center center;
     background-repeat: no-repeat;
+    position: relative;
+}
+#categoria01::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    background-color: rgba(0,0,0,0.3);
 }
 #categoria02 {
     background-image: url("../img/bg_imple.png");
     background-size: 150% 100%;
     background-position: left center;
     background-repeat: no-repeat;
+    position: relative;
+}
+#categoria02::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    bottom: 30px;
+    background-color: rgba(0,0,0,0.4);
 }
 
 /**********************************************************************

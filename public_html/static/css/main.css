@@ -488,6 +488,14 @@ footer a.btn:hover {
 .login-titulo-dos::after{
     background-image: url("../img/brochazo_roja_login.svg");
     }
+
+input:invalid {
+    border-color: red;
+}
+input,
+input:valid {
+    border-color: #ccc;
+}
 /**********MODULO*************/
 .sidebar {
     background-color: #333;

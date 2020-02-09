@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #ffffff;
     font-family: "Roboto";
     font-size: 16px;
     /* Se mueve el contenido hacia abajo porque la barra de menú está
@@ -229,7 +229,6 @@ footer a.btn:hover {
     margin-top: 0px;
 }
 .categoria .detalle img {
-    margin: 0px auto;
     width: 70px;
 }
 .MultiCarousel {
@@ -324,8 +323,8 @@ footer a.btn:hover {
 }
 #categoria01 {
     background-image: url("../img/bg_planeacion-movil.png");
-    background-size: 200% 100%;
-    background-position: center center;
+    background-size: auto 100%;
+    background-position: 40% center;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -340,8 +339,8 @@ footer a.btn:hover {
 }
 #categoria02 {
     background-image: url("../img/bg_imple-movil.png");
-    background-size: 200% 100%;
-    background-position: 60% center;
+    background-size: auto 100%;
+    background-position: 70% center;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -356,8 +355,8 @@ footer a.btn:hover {
 }
 #categoria03 {
     background-image: url("../img/bg_segui-movil.png");
-    background-size: 200% 100%;
-    background-position: center center;
+    background-size: auto 100%;
+    background-position: 40% center;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -388,7 +387,7 @@ footer a.btn:hover {
 }
 #categoria05 {
     background-image: url("../img/bg_comunicacion-movil.png");
-    background-size: 200% 100%;
+    background-size: auto 100%;
     background-position: left center;
     background-repeat: no-repeat;
     position: relative;
@@ -643,6 +642,13 @@ footer a.btn:hover {
     .brochazo-rojo::after {
         right: -35px;
     }
+    /*** Estilos relacionados con cateogrías ***/
+    .categoria .detalle .logo {
+        text-align: right;
+    }
+    .categoria .detalle .descripcion {
+        text-align: left;
+    }
 }
 
 @media (min-width: 992px) {
@@ -688,6 +694,27 @@ footer a.btn:hover {
     footer nav {
         padding: 0px 200px;
     }
+    /*** Estilos relacionados con cateogrías ***/
+    #categoria01 {
+        background-image: url("../img/bg_planeacion.png");
+        background-size: 100% 100%;
+    }
+    #categoria02 {
+        background-image: url("../img/bg_imple.png");
+        background-size: 100% 100%;
+    }
+    #categoria03 {
+        background-image: url("../img/bg_segui.png");
+        background-size: 100% 100%;
+    }
+    #categoria04 {
+        background-image: url("../img/bg_evaluacion.png");
+        background-size: 100% 100%;
+    }
+    #categoria05 {
+        background-image: url("../img/bg_comunicacion.png");
+        background-size: 100% 100%;
+    }    
 }
 
 @media (min-width: 1200px) {

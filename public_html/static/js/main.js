@@ -8,7 +8,7 @@ function leftClick(obj) {
     var slider = container.find(sliderClass);
 
     root.style.setProperty('--carousel-num-items', itemNum);
-    slider.css('transform', "translateX("+ -190 +"px)");    
+    slider.css('transform', "translateX("+ 0 +"px)");    
 }
 
 function rightClick(obj) {
@@ -21,6 +21,6 @@ function rightClick(obj) {
     var slider = container.find(sliderClass);
 
     root.style.setProperty('--carousel-num-items', itemNum);
-    slider.css('transform', "translateX("+ 0 +"px)");    
+    slider.css('transform', "translateX("+ -190 +"px)");    
 }
 

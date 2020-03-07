@@ -327,6 +327,8 @@ footer a.btn:hover {
     background-position: 40% center;
     background-repeat: no-repeat;
     position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 #categoria01::before {
     content: "";
@@ -343,6 +345,8 @@ footer a.btn:hover {
     background-position: 70% center;
     background-repeat: no-repeat;
     position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 #categoria02::before {
     content: "";
@@ -359,6 +363,8 @@ footer a.btn:hover {
     background-position: 40% center;
     background-repeat: no-repeat;
     position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 #categoria03::before {
     content: "";
@@ -375,6 +381,8 @@ footer a.btn:hover {
     background-position: 60% center;
     background-repeat: no-repeat;
     position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 #categoria04::before {
     content: "";
@@ -391,6 +399,8 @@ footer a.btn:hover {
     background-position: left center;
     background-repeat: no-repeat;
     position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 #categoria05::before {
     content: "";
@@ -696,25 +706,40 @@ footer a.btn:hover {
     }
     /*** Estilos relacionados con cateogrías ***/
     #categoria01 {
-        background-image: url("../img/bg_planeacion.png");
-        background-size: 100% 100%;
+        background-image: url("../img/bg_planeacion-min.png");
+        background-size: cover;
+    }
+    #categoria01::before {
+        background-color: rgba(0,0,0,0);
     }
     #categoria02 {
-        background-image: url("../img/bg_imple.png");
-        background-size: 100% 100%;
+        background-image: url("../img/bg_imple-min.png");
+        background-size: cover;
+    }
+    #categoria02::before {
+        background-color: rgba(0,0,0,0);
     }
     #categoria03 {
-        background-image: url("../img/bg_segui.png");
-        background-size: 100% 100%;
+        background-image: url("../img/bg_segui-min.png");
+        background-size: cover;
+    }
+    #categoria03::before {
+        background-color: rgba(0,0,0,0);
     }
     #categoria04 {
-        background-image: url("../img/bg_evaluacion.png");
-        background-size: 100% 100%;
+        background-image: url("../img/bg_evaluacion-min.png");
+        background-size: cover;
+    }
+    #categoria04::before {
+        background-color: rgba(0,0,0,0);
     }
     #categoria05 {
-        background-image: url("../img/bg_comunicacion.png");
-        background-size: 100% 100%;
+        background-image: url("../img/bg_comunicacion-min.png");
+        background-size: cover;
     }    
+    #categoria05::before {
+        background-color: rgba(0,0,0,0);
+    }
 }
 
 @media (min-width: 1200px) {

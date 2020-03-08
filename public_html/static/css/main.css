@@ -412,13 +412,54 @@ footer a.btn:hover {
     background-color: rgba(0,0,0,0.4);
 }
 
+
+/********** Estilos para Login *************/
+.login {
+    background-color: #e9e9e9;
+}
+.fondo-gris-form {
+    background-color: #fff;
+    padding: 0px 35px 35px 35px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.login-titulo, .login-titulo-dos {
+    position: relative;
+    height: auto;
+    z-index: 0;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: -100px;  
+    padding-bottom: 80px;
+    color: #fff;
+}
+
+.login-titulo::after, .login-titulo-dos::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -60px;
+    right: -60px;
+    top:-100px;
+    bottom: 0px;
+    background-image: url("../img/brochazo_verde-login.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1
+}
+.login-titulo-dos::after{
+    background-image: url("../img/brochazo_roja_login.svg");
+    }
+
 /********** Estilos para módulos *************/
 
 /*
 Color de fondo para el sidebar: #f5f5f5
 Color de fondo para el encabezado del sidebar: #f5f5f5
 Color fondo lista de lecciones: #fbfbfb
-Color lección activa: , #f5f5f5
+Color lección activa: color: #fbfbfb, bg: #f5f5f5
 Color de fondo para la descripción: #eeeeee
 */ 
 

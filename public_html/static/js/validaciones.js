@@ -2,7 +2,7 @@
     var input = document.getElementById('contrasenia');
     var form = document.getElementById('form');
     var alerta = document.createElement('div');
-            alerta.id = 'notify';
+            alerta.id = 'notify'';;
             alerta.style.display = 'none';
             form.appendChild(alerta);
 
@@ -26,9 +26,14 @@
 })();*/
 /*https://webdesign.tutsplus.com/es/tutorials/html5-form-validation-with-the-pattern-attribute--cms-25145*/
 
-function validarPass(){
+function validarPass() {
     var contrasenia = document.getElementById("contrasenia");
     var expReg = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
+    var comparacion = expReg.test(contrasenia);
+    
+    if(comparacion == false)
+        alert("La contraseña debe tener como minimo una letra minuscula, una letra mayuscula, un numero y cuanto minimo 8 caracteres");
+    }
 
 }//Termina validar  contrasenia*/
            
@@ -40,37 +45,8 @@ function validarContraseniaIgual()
     
     if (pcontrasenia != contrasenia2) {
       alert("Las contraseñas no coinciden");
-      //return false;
     } 
 
 }//Termina validar registo
-            
-            
-            
-            
+      
 
-
-    
-            
-    
-            
-            
-            
-            
-            
-     
-
-
-
-            
-            
-
-
-
-
-
-
-
-
-
-    

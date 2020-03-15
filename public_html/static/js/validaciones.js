@@ -1,4 +1,4 @@
-(function() {
+/*(function() {
     var input = document.getElementById('contrasenia');
     var form = document.getElementById('form');
     var alerta = document.createElement('div');
@@ -23,23 +23,13 @@
         }
     });
 
-})();
+})();*/
 /*https://webdesign.tutsplus.com/es/tutorials/html5-form-validation-with-the-pattern-attribute--cms-25145*/
-/*
+
 function validarPass(){
     var contrasenia = document.getElementById("contrasenia");
-    var numero="0123456789";
-    var minus="abcdefghyjklmnñopqrstuvwxyz";
-    var mayusculas="ABCDEFGHYJKLMNÑOPQRSTUVWXYZ";
-   // var expre = (^[A-Za-z\d$@$!%*?&]+$);
-    if(contrasenia.length < 10){		
-        alert("Debe contener un minimo de 10 caracateres");
-        for(i=0; i<contrasenia.length; i++){
-          if (mayusculas.indexOf(contrasenia.charAt(i),0)==-1){
-             alert("Debe contener al menos una letra mayuscula");
-          }
-       }
-    }
+    var expReg = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
+
 }//Termina validar  contrasenia*/
            
 

@@ -58,10 +58,10 @@
                 </div>
                    <form action="" class="" id="comenzar">
                        <div class="form-group">
-                          <input class="form-control" id="correo electronico" type="text" placeholder="Correo electronico">
+                          <input class="form-control" id="correo electronico" type="email" placeholder="Correo electronico" required>
                        </div>
                         <div class="form-group">
-                            <input class="form-control" id="contraseña" type="text" placeholder="Contraseña">
+                            <input class="form-control" id="contraseña" type="password" placeholder="Contraseña" required>
                         </div>
                        <div class="form-group">
                         <h5 class="text-right">Recuperar contraseña</h5>
@@ -72,7 +72,7 @@
                             </label>
 
                         </div>
-                        <a href="" class="btn btn-verde btn-lg center-block" onclick="">LOGIN</a>
+                        <input class="btn btn-verde btn-lg center-block" type="submit" value="LOGIN" id="login" onclick="">
                     </form>
                 </div>
            </div>
@@ -82,7 +82,7 @@
                 <div class="login-titulo-dos">
                     <h1 class="text-bold">REGISTRATE</h1>
                 </div>
-                <form action="" class="" id="registro">
+                <form action="registrar.php" class="" id="registro" onsubmit="return validarPass();">
                     <div class="form-group">
                         <input class="form-control" id="nombre" type="text" placeholder="Nombre" required>
                     </div>
@@ -116,7 +116,7 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <select class="form-control" id="País" required>
+                        <select class="form-control" id="País">
                            <option>País</option>
                             <option>México</option>
                             <option>Afganistán</option>
@@ -353,8 +353,9 @@
                             <option>Zimbabue</option>
                         </select>
                     </div>
-                    <input class="btn btn-verde btn-lg center-block" type="submit" value="REGÍSTRATE">
+                    <input class="btn btn-verde btn-lg center-block" type="submit" value="REGÍSTRATE" id="registrate">
                     <!--<a href="" class="btn btn-verde btn-lg center-block" >REGÍSTRATE</a>-->
+                    
                 </form>
             </div>
        </div>

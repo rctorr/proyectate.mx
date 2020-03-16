@@ -30,12 +30,14 @@ function validarPass() {
     var contrasenia = document.getElementById("contrasenia");
     var expReg = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
     var comparacion = expReg.test(contrasenia);
+    var form = document.getElementById('form');
+    //var alerta = document.createElement('div');
     
-    if(comparacion == false)
-        alert("La contraseña debe tener como minimo una letra minuscula, una letra mayuscula, un numero y cuanto minimo 8 caracteres");
+    if(comparacion == false){
+        alert("La contraseña debe tener como minimo una minuscula, una mayuscula, un numero y como minimo 8 caracteres");
     }
-
-}//Termina validar  contrasenia*/
+}
+//Termina validar  contrasenia*/
            
 
 function validarContraseniaIgual()

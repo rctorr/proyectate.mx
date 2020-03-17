@@ -672,6 +672,17 @@ Color de fondo para la descripción: #eeeeee
     justify-content: center;
 }
 
+/*Estilos añadidoa para login?*/
+/*** Estilos para bloques o secciones ***/
+.section {
+    margin: 0px -15px;  /* Se anula el padding del container */
+    padding: 20px 20px;  /* Se asigna el nuevo padding */
+}
+.banner {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 /**************************************
   Estilos para componentes
 **************************************/
@@ -713,6 +724,96 @@ Color de fondo para la descripción: #eeeeee
         padding-bottom: 10px;
     }
 }
+/*******************************************************************
+        login
+***********************************************************/
+.login {
+    background-color: #dddedd; 
+    padding: 30px 30px 0px;
+}
+.fondo-gris-form {
+    background-color: #fff;
+    padding: 0px 35px 35px 35px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.login-titulo, .login-titulo-dos {
+    position: relative;
+    height: auto;
+    z-index: 0;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: -100px;  
+    padding-bottom: 80px;
+    color: #fff;
+}
+
+.login-titulo::after, .login-titulo-dos::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -60px;
+    right: -60px;
+    top:-100px;
+    bottom: 0px;
+    background-image: url("../img/brochazo_verde-login.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1
+}
+.login-titulo-dos::after{
+    background-image: url("../img/brochazo_roja_login.svg");
+    }
+
+input:invalid {
+    border-color: red;
+}
+input,
+input:valid {
+    border-color: #ccc;
+}
+/**********MODULO*************/
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin: 0px;
+    padding: 25px 0px;
+    background-color: #2a2a2a;
+        
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sidebar li {
+    border: 1px solid #2a2a2a;
+    margin: 0px;
+    transition: 
+    
+}
+
+.sidebar li:hover {
+    background: #444;
+    border-left: 5px solid #eee;
+}
+
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration:none;
+    padding: 10px;
+}
+
 
 
 /*******************************************************************************
@@ -765,6 +866,10 @@ Color de fondo para la descripción: #eeeeee
     .brochazo-rojo::after {
         right: -35px;
     }
+    /*Ajustes para login*/
+    .login {
+        padding: 30px 50px 0px;
+    }
     /*** Estilos relacionados con cateogrías ***/
     .categoria .detalle .logo {
         text-align: right;
@@ -816,6 +921,10 @@ Color de fondo para la descripción: #eeeeee
     }
     footer nav {
         padding: 0px 200px;
+    }
+    /*Ajustes para login*/
+    .login {
+        padding: 30px 100px 0px;
     }
     /*** Estilos relacionados con cateogrías ***/
     #categoria01 {

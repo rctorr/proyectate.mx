@@ -4,8 +4,7 @@
 }
 
 body {
-    /*background-color: #000000;*/
-    background-color: #dddedd;
+    background-color: #000000;
     font-family: "Roboto";
     font-size: 16px;
     /* Se mueve el contenido hacia abajo porque la barra de menú está
@@ -402,6 +401,7 @@ footer a.btn:hover {
     align-items: center;
     justify-content: center;
 }
+
 /*Estilos añadidoa para login?*/
 /*** Estilos para bloques o secciones ***/
 .section {
@@ -453,6 +453,10 @@ footer a.btn:hover {
 /*******************************************************************
         login
 ***********************************************************/
+.login {
+    background-color: #dddedd; 
+    padding: 30px 30px 0px;
+}
 .fondo-gris-form {
     background-color: #fff;
     padding: 0px 35px 35px 35px;
@@ -588,6 +592,10 @@ input:valid {
     .brochazo-rojo::after {
         right: -35px;
     }
+    /*Ajustes para login*/
+    .login {
+        padding: 30px 50px 0px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -632,6 +640,11 @@ input:valid {
     }
     footer nav {
         padding: 0px 200px;
+    }
+    
+    /*Ajustes para login*/
+    .login {
+        padding: 30px 100px 0px;
     }
 }
 

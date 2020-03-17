@@ -82,7 +82,7 @@
                 <div class="login-titulo-dos">
                     <h1 class="text-bold">REGISTRATE</h1>
                 </div>
-                <form action="registrar.py" class="" id="registro" onsubmit="validarPass()">
+                <form action="registrar.py" class="" id="registro" onsubmit="return validarPass()" method="post">
                     <div class="form-group">
                         <input class="form-control" id="nombre" type="text" placeholder="Nombre" required>
                     </div>

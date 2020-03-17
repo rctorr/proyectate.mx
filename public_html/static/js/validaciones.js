@@ -27,7 +27,7 @@
 /*https://webdesign.tutsplus.com/es/tutorials/html5-form-validation-with-the-pattern-attribute--cms-25145*/
 
 function validarPass() {
-    var contrasenia = document.getElementById("contrasenia");
+    var contrasenia = document.getElementById("contrasenia").value;
     var expReg = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
     var comparacion = expReg.test(contrasenia);
     var form = document.getElementById('form');
@@ -35,6 +35,10 @@ function validarPass() {
     
     if(comparacion == false){
         alert("La contraseña debe tener como minimo una minuscula, una mayuscula, un numero y como minimo 8 caracteres");
+        return false;
+    }
+    else {
+        return true;
     }
 }
 //Termina validar  contrasenia*/

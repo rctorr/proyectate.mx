@@ -774,6 +774,15 @@ input,
 input:valid {
     border-color: #ccc;
 }
+.login .link {
+    background-color: transparent;
+    border: none;
+    color: #337ab7;
+}
+.login .link:hover {
+    text-decoration: underline;
+}
+
 /*******************************************************************************
   Ajustes responsivo
 *******************************************************************************/

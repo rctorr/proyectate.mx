@@ -25,4 +25,20 @@ function validarContraseniaIgual()
 
 }//Termina validar registo
       
-
+function recuperacontrasenia() {
+    var email = document.getElementsByName("loginemail");
+    
+    console.log(email[0].value);
+    
+    if(email[0].value) {
+        var pass = document.getElementsByName("loginpass");
+        pass[0].required = false;
+        
+        var form = document.getElementById("comenzar");    
+        form.action = "loginreg.html"
+        
+        return true;
+    } else {
+        return false;
+    }
+}

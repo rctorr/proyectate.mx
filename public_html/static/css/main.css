@@ -343,8 +343,7 @@ footer a.btn:hover {
     background-position: 40% center;
     background-repeat: no-repeat;
     position: relative;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 20px 0px;
 }
 #categoria04 {
     background-image: url("../img/bg_evaluacion-movil.jpg");
@@ -352,8 +351,7 @@ footer a.btn:hover {
     background-position: 60% center;
     background-repeat: no-repeat;
     position: relative;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 20px 0px;
 }
 #categoria05 {
     background-image: url("../img/bg_comunicacion-movil.jpg");
@@ -361,8 +359,7 @@ footer a.btn:hover {
     background-position: left center;
     background-repeat: no-repeat;
     position: relative;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 20px 0px;
 }
 
 

@@ -322,43 +322,23 @@ footer a.btn:hover {
     background-color: #fff;
 }
 #categoria01 {
-    background-image: url("../img/bg_planeacion-movil.png");
+    background-image: url("../img/bg_planeacion-movil.jpg");
     background-size: auto 100%;
     background-position: 40% center;
     background-repeat: no-repeat;
     position: relative;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-#categoria01::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 0px;
-    right: 0px;
-    bottom: 30px;
-    background-color: rgba(0,0,0,0.3);
+    margin: 20px 0px;
 }
 #categoria02 {
-    background-image: url("../img/bg_imple-movil.png");
+    background-image: url("../img/bg_imple-movil.jpg");
     background-size: auto 100%;
     background-position: 70% center;
     background-repeat: no-repeat;
     position: relative;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-#categoria02::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 0px;
-    right: 0px;
-    bottom: 30px;
-    background-color: rgba(0,0,0,0.4);
+    margin: 20px 0px;
 }
 #categoria03 {
-    background-image: url("../img/bg_segui-movil.png");
+    background-image: url("../img/bg_segui-movil.jpg");
     background-size: auto 100%;
     background-position: 40% center;
     background-repeat: no-repeat;
@@ -366,17 +346,8 @@ footer a.btn:hover {
     margin-left: 0px;
     margin-right: 0px;
 }
-#categoria03::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 0px;
-    right: 0px;
-    bottom: 30px;
-    background-color: rgba(0,0,0,0.4);
-}
 #categoria04 {
-    background-image: url("../img/bg_evaluacion-movil.png");
+    background-image: url("../img/bg_evaluacion-movil.jpg");
     background-size: auto 100%;
     background-position: 60% center;
     background-repeat: no-repeat;
@@ -384,32 +355,14 @@ footer a.btn:hover {
     margin-left: 0px;
     margin-right: 0px;
 }
-#categoria04::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 0px;
-    right: 0px;
-    bottom: 30px;
-    background-color: rgba(0,0,0,0.4);
-}
 #categoria05 {
-    background-image: url("../img/bg_comunicacion-movil.png");
+    background-image: url("../img/bg_comunicacion-movil.jpg");
     background-size: auto 100%;
     background-position: left center;
     background-repeat: no-repeat;
     position: relative;
     margin-left: 0px;
     margin-right: 0px;
-}
-#categoria05::before {
-    content: "";
-    position: absolute;
-    top: 30px;
-    left: 0px;
-    right: 0px;
-    bottom: 30px;
-    background-color: rgba(0,0,0,0.4);
 }
 
 
@@ -895,35 +848,35 @@ input:valid {
     }
     /*** Estilos relacionados con cateogrías ***/
     #categoria01 {
-        background-image: url("../img/bg_planeacion-min.png");
+        background-image: url("../img/bg_planeacion.jpg");
         background-size: cover;
     }
     #categoria01::before {
         background-color: rgba(0,0,0,0);
     }
     #categoria02 {
-        background-image: url("../img/bg_imple-min.png");
+        background-image: url("../img/bg_imple.jpg");
         background-size: cover;
     }
     #categoria02::before {
         background-color: rgba(0,0,0,0);
     }
     #categoria03 {
-        background-image: url("../img/bg_segui-min.png");
+        background-image: url("../img/bg_segui.jpg");
         background-size: cover;
     }
     #categoria03::before {
         background-color: rgba(0,0,0,0);
     }
     #categoria04 {
-        background-image: url("../img/bg_evaluacion-min.png");
+        background-image: url("../img/bg_evaluacion.jpg");
         background-size: cover;
     }
     #categoria04::before {
         background-color: rgba(0,0,0,0);
     }
     #categoria05 {
-        background-image: url("../img/bg_comunicacion-min.png");
+        background-image: url("../img/bg_comunicacion.jpg");
         background-size: cover;
     }    
     #categoria05::before {

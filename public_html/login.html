@@ -81,7 +81,7 @@
                 <div class="login-titulo-dos">
                     <h1 class="text-bold">REGISTRATE</h1>
                 </div>
-                <form action="registrar.py" class="" id="registro" onsubmit="return validarPass()" method="post">
+                <form action="registrar.py" class="" id="registro" method="post">
                     <div class="form-group">
                         <input class="form-control" id="nombre" type="text" placeholder="Nombre" required>
                     </div>
@@ -89,7 +89,7 @@
                         <input class="form-control" id="email" type="email" placeholder="Correo electrónico" required>
                     </div>
                     <div class="form-group">
-                        <input class="form-control" id="contrasenia" type="password" placeholder="Contraseña"  required>
+                        <input class="form-control" id="contrasenia" type="password" placeholder="Contraseña" onkeyup="validarPass()"  required>
                         <!--pattern=".{10,}"  creará password que deberá contener 10 o más carácteres-->
                     </div>
                     <div class="alert alert-danger" id="msjPassError1">
@@ -98,7 +98,7 @@
                         </p>
                     </div>  
                     <div class="form-group">
-                        <input class="form-control" id="contrasenia2" type="password" placeholder="Vuelve a escribir la contraseña" required>
+                        <input class="form-control" id="contrasenia2" type="password" placeholder="Vuelve a escribir la contraseña" onkeyup="validarPass2()" required>
                     </div>  
                     <div class="alert alert-danger" id="msjPassError2">
                         <p>Las contraseñas no son iguales</p>

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
@@ -9,23 +8,16 @@
     <title>PROYECTATE.MX</title>
     <link rel="icon" type="image/png" href="static/img/favicon.ico"/>
     <!-- Bootstrap -->
-    <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    <link rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" 
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
         crossorigin="anonymous">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Roboto"
         rel="stylesheet">
     <link rel="stylesheet" href="static/css/main.css">
 </head>
 
 <body>
-    
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -57,37 +49,38 @@
     <!-- [INICIA CONTENIDO] (No modificar nada antes de esta línea)     -->
  
    <div class="container-fluid login">
-       <br>
        <div class="row">
-           
            <div class= "col-xs-12 col-sm-12 col-md-5 col-lg-5">
               <div class="fondo-gris-form">
                    <div class="login-titulo">
                     <h1 class="text-bold">COMENZEMOS</h1>
                 </div>
-                   <form action="" class="">
-                   <div class="form-group">
-                      <label for= "correelectronico">Correo electronico:</label>
-                      <input class="form-control" id="correo electronico" type="text" placeholder="">
-                   </div>
-                    <div class="form-group">
-                        <label for= "contraseña">Contraseña:</label>
-                        <input class="form-control" id="contraseña" type="text" placeholder="">
-                    </div>
-                   <div class="form-group">
-                    <h5 class="text-right">Recuperar contraseña</h5>
-                   </div>        
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox">Mantenme conectado
-                        </label>
-
-                    </div>
-                    <a href="" class="btn btn-verde btn-lg center-block">LOGIN</a>
-                </form>
-            </div>
-         
-         
+                   <form action="categorias.html" id="comenzar" method="post">
+                       <div class="form-group">
+                          <input class="form-control" id="correo electronico" type="email" placeholder="Correo electronico" required name="loginemail">
+                       </div>
+                        <div class="form-group">
+                            <input class="form-control" id="contraseña" type="password" placeholder="Contraseña" required name="loginpass">
+                        </div>
+                       <div class="form-group text-right">
+                           <input class="link" type="submit" value="Recuperar contraseña" name="recuperaclave" onclick="recuperacontrasenia()">
+                       </div>
+                       <div class="alert alert-danger" >
+                          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
+                          Error: La dirección e-mail o la clave son incorrectos.
+                       </div>
+                       <div class="alert alert-success" >
+                          <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
+                          Se ha enviado su nueva contraseña a su cuenta de e-mail.
+                       </div>
+                       <!-- Posibles mensajes para este formulario
+                          Error: La dirección e-mail o la clave son incorrectos. <- al presionar login
+                          Error: La dirección e-mail no está registrada <- al presionar recuperar contraseña
+                          Se ha enviado su nueva contraseña a su cuenta de e-mail.
+                        -->
+                        <input class="btn btn-verde btn-lg center-block" type="submit" value="LOGIN" name="login">
+                    </form>
+                </div>
            </div>
            
         <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-2">
@@ -95,37 +88,50 @@
                 <div class="login-titulo-dos">
                     <h1 class="text-bold">REGISTRATE</h1>
                 </div>
-                <form action="" class="">
+                <form action="registrar.py" class="" id="registro" method="post">
                     <div class="form-group">
-                        <label for= "Nombre"></label>
-                        <input class="form-control" id="Nombre" type="text" placeholder="Nombre">
-                        <label for= "Apellido"></label>
-                        <input class="form-control" id="Apellido" type="text" placeholder="Apellido">
-                        <label for= "Correo electrónico"></label>
-                        <input class="form-control" id="Correo electrónico" type="text" placeholder="Correo electrónico">
-                        <label for= "Contraseña"></label>
-                        <input class="form-control" id="Contraseña" type="text" placeholder="Contraseña">
-                        <label for= "Genero"></label>
-                        <select class="form-control" id="Genero">
-                            <option>Genero</option>
-                            <option>Femenino</option>
-                            <option>Masculino</option>
-                            <option>Otro</option>
-                            <option>Prefiero no decirlo</option>
+                        <input class="form-control" id="nombre" type="text" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="email" type="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" id="contrasenia" type="password" placeholder="Contraseña" onkeyup="validarPass()"  required>
+                    </div>
+                    <div class="alert alert-danger" id="msjPassError1">
+                        <p>
+                            La contraseña debe tener como minimo una minuscula, una mayuscula, un numero y minimo 8 caracteres
+                        </p>
+                    </div>  
+                    <div class="form-group">
+                        <input class="form-control" id="contrasenia2" type="password" placeholder="Vuelve a escribir la contraseña" onkeyup="validarPass2()" required>
+                    </div>  
+                    <div class="alert alert-danger" id="msjPassError2">
+                        <p>Las contraseñas no son iguales</p>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="Genero" required>
+                            <option value="">Genero</option>
+                            <option value="F">Femenino</option>
+                            <option value="M">Masculino</option>
+                            <option value="O">Otro</option>
+                            <option value="N">Prefiero no decirlo</option>
                         </select>
-                        <label for= "Edad"></label>
-                        <select class="form-control" id="Edad">
-                            <option>Edad</option>
-                            <option>Menos de 18 años</option>
-                            <option>De 18 a 24 años</option>
-                            <option>De 25 a 30 años</option>
-                            <option>Mas de 30 años</option>
-                            <option>Prefiero no decirlo</option>
+                     </div>
+                    <div class="form-group">
+                        <select class="form-control" id="Edad" required>
+                            <option value="">Edad</option>
+                            <option value="18">Menos de 18 años</option>
+                            <option value="24">De 18 a 24 años</option>
+                            <option value="30">De 25 a 30 años</option>
+                            <option value="31">Mas de 30 años</option>
+                            <option value="0">Prefiero no decirlo</option>
                         </select>
-                  <label for= "País"></label>
-                        <select class="form-control" id="País">
-                           <option>País</option>
-                            <option>México</option>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="País" required>
+                           <option value="">País</option>
+                            <option value="MX">México</option>
                             <option>Afganistán</option>
                             <option>Albania</option>
                             <option>Alemania</option>
@@ -359,14 +365,15 @@
                             <option>Zambia</option>
                             <option>Zimbabue</option>
                         </select>
-        
                     </div>
-                    <a href="" class="btn btn-verde btn-lg center-block">REGÍSTRATE</a>
+                    <input class="btn btn-verde btn-lg center-block" type="submit" value="REGÍSTRATE" id="registrate">
+                    <!--<a href="" class="btn btn-verde btn-lg center-block" >REGÍSTRATE</a>-->
+                    
                 </form>
             </div>
        </div>
     </div>
-        </div>
+</div>
         
     
     <!-- [TERMINA CONTENIDO] (No modificar nada después de esta línea)  -->
@@ -401,5 +408,6 @@
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous">
     </script>    
+    <script src="static/js/validaciones.js"></script>
 </body>
 </html>

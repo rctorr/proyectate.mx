@@ -402,7 +402,9 @@ footer a.btn:hover {
 .login-titulo-dos::after{
     background-image: url("../img/brochazo_roja_login.svg");
     }
-
+#msjPassError1, #msjPassError2 {
+    display: none;
+}
 /********** Estilos para módulos *************/
 
 /*

@@ -1,44 +1,30 @@
 function validarPass() {
+    /* Función para validar que la contraseña sea segura */
     var contrasenia = document.getElementById("contrasenia").value;
     var expReg = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})");
     var comparacion = expReg.test(contrasenia);
+    var error1 = document.getElementById("msjPassError1");
     
     if(comparacion == false){
-        alert("La contraseña debe tener como minimo una minuscula, una mayuscula, un numero y como minimo 8 caracteres");
-        return false;
+        error1.style.display= "block";
     }
-    else {
-        return true;
+    else if(comparacion == true){
+        error1.style.display= "none";
+    }  
+}
+
+function validarPass2() {
+    /* Función validar que las contraseñas sean iguales */
+    var contrasenia = document.getElementById("contrasenia").value;
+    var contrasenia2 = document.getElementById("contrasenia2").value;
+    var error2 = document.getElementById("msjPassError2");
+    
+    if (contrasenia != contrasenia2) {
+        error2.style.display="block";
+    }
+    else if(contrasenia == contrasenia2){
+        error2.style.display="none";
     }
 }
-//Termina validar  contrasenia*/
-           
 
-function validarContraseniaIgual()
-{ 
-    var contrasenia = document.getElementById("contrasenia");
-    var contrasenia2 = document.getElementById("contrasenia2");    
-    
-    if (pcontrasenia != contrasenia2) {
-      alert("Las contraseñas no coinciden");
-    } 
-
-}//Termina validar registo
-      
-function recuperacontrasenia() {
-    var email = document.getElementsByName("loginemail");
-    
-    console.log(email[0].value);
-    
-    if(email[0].value) {
-        var pass = document.getElementsByName("loginpass");
-        pass[0].required = false;
-        
-        var form = document.getElementById("comenzar");    
-        form.action = "loginreg.html"
-        
-        return true;
-    } else {
-        return false;
-    }
-}
+//document.getElementById("contrasenia2").onkeyup = function() {validarPass2()};

@@ -88,7 +88,7 @@
                 <div class="login-titulo-dos">
                     <h1 class="text-bold">REGISTRATE</h1>
                 </div>
-                <form action="registrar.py" class="" id="registro" onsubmit="return validarPass()" method="post">
+                <form action="registrar.py" class="" id="registro" method="post">
                     <div class="form-group">
                         <input class="form-control" id="nombre" type="text" placeholder="Nombre" required>
                     </div>
@@ -96,35 +96,42 @@
                         <input class="form-control" id="email" type="email" placeholder="Correo electrónico" required>
                     </div>
                     <div class="form-group">
-                        <input class="form-control" id="contrasenia" type="password" placeholder="Contraseña"  required>
-                        <!--pattern=".{10,}"  creará password que deberá contener 10 o más carácteres-->
+                        <input class="form-control" id="contrasenia" type="password" placeholder="Contraseña" onkeyup="validarPass()"  required>
                     </div>
-                    <div class="form-group">
-                        <input class="form-control" id="contrasenia2" type="password" placeholder="Vuelve a escribir la contraseña" required>
+                    <div class="alert alert-danger" id="msjPassError1">
+                        <p>
+                            La contraseña debe tener como minimo una minuscula, una mayuscula, un numero y minimo 8 caracteres
+                        </p>
                     </div>  
                     <div class="form-group">
+                        <input class="form-control" id="contrasenia2" type="password" placeholder="Vuelve a escribir la contraseña" onkeyup="validarPass2()" required>
+                    </div>  
+                    <div class="alert alert-danger" id="msjPassError2">
+                        <p>Las contraseñas no son iguales</p>
+                    </div>
+                    <div class="form-group">
                         <select class="form-control" id="Genero" required>
-                            <option>Genero</option>
-                            <option>Femenino</option>
-                            <option>Masculino</option>
-                            <option>Otro</option>
-                            <option>Prefiero no decirlo</option>
+                            <option value="">Genero</option>
+                            <option value="F">Femenino</option>
+                            <option value="M">Masculino</option>
+                            <option value="O">Otro</option>
+                            <option value="N">Prefiero no decirlo</option>
                         </select>
                      </div>
                     <div class="form-group">
                         <select class="form-control" id="Edad" required>
-                            <option>Edad</option>
-                            <option>Menos de 18 años</option>
-                            <option>De 18 a 24 años</option>
-                            <option>De 25 a 30 años</option>
-                            <option>Mas de 30 años</option>
-                            <option>Prefiero no decirlo</option>
+                            <option value="">Edad</option>
+                            <option value="18">Menos de 18 años</option>
+                            <option value="24">De 18 a 24 años</option>
+                            <option value="30">De 25 a 30 años</option>
+                            <option value="31">Mas de 30 años</option>
+                            <option value="0">Prefiero no decirlo</option>
                         </select>
                     </div>
                     <div class="form-group">
-                        <select class="form-control" id="País">
-                           <option>País</option>
-                            <option>México</option>
+                        <select class="form-control" id="País" required>
+                           <option value="">País</option>
+                            <option value="MX">México</option>
                             <option>Afganistán</option>
                             <option>Albania</option>
                             <option>Alemania</option>

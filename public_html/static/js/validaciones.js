@@ -26,5 +26,23 @@ function validarPass2() {
         error2.style.display="none";
     }
 }
+      
+function recuperacontrasenia() {
+    /* Función que acciona la opción de recuperar contraseña en el miosmo formulario */
+    var email = document.getElementsByName("loginemail");
+    
+    console.log(email[0].value);
+    
+    if(email[0].value) {
+        var pass = document.getElementsByName("loginpass");
+        pass[0].required = false;
+        
+        var form = document.getElementById("comenzar");    
+        form.action = "loginreg.html"
+        
+        return true;
+    } else {
+        return false;
+    }
+}
 
-//document.getElementById("contrasenia2").onkeyup = function() {validarPass2()};

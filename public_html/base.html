@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -52,95 +52,13 @@
             </div><!-- Termina nav-collapse -->
         </div><!-- Termina container-fluid -->
     </nav><!-- Termina navbar -->
-    
+
     <!-- ============================================================== -->
     <!-- [INICIA CONTENIDO] (No modificar nada antes de esta línea)     -->
- 
-    <!-- Inicia banner --> 
-    <div class="jumbotron bg-black banner">
-        <a href="loginreg.html">
-          <img class="img-responsive" src="static/img/banner.jpg">
-        </a>
-    </div><!-- Termina banner -->
-
-    <div class="container-fluid">
-        
-        <section id="index01" class="text-white section">
-            <img class="img-responsive center-block row-img-m ph-15" src="static/img/ima_proyectate.svg">
-            <div class="row">
-                <div class="col-md-4 text-center"> 
-                    <h3>¿QUE ES PROYECTATE?</h3>
-                    <p class="text-justify">proyectate.mx es una plataforma virtual que te
-                    enseña cómo puedes mejorar tu entorno. ¡Es fácil,
-                    práctica y de libre acceso!</p>
-                </div> 
-                <div class="col-md-4 text-center"> 
-                    <h3>¿POR QUE PROYECTATE?</h3>
-                    <p class="text-justify">Los jóvenes tenemos el talento
-                    y las capacidades parta mejorar nuestros entornos.¡En
-                    proyectate.mx estamos para ayudarte!</p>
-                </div> 
-                <div class="col-md-4 text-center"> 
-                    <h3>¿PARA QUE PROYECTATE?</h3>
-                    <p class="text-justify">En proyectate.mx aprenderás a
-                    planear, implementar, evaluar y comunicar proyectos
-                    que mejoren tu entorno. ¡Empieza ya!</p> 
-                </div> 
-            </div><!-- termina row -->
-        </section><!-- Termina index01 -->
-
-        <section id="index02" class="bg-gray text-center section">    
-            <h2 class="text-bold">COMO FUNCIONA PROYECTATE</h2>
-            <p class="text-justify">En proyectate.mx, te presentamos diversos módulos para que,
-            paso a paso, aprendas a <b>planear</b>, <b>implementar</b>,
-            <b>dar seguimiento</b>, <b>evaluar</b> y <b>comunicar</b>
-            proyectos para mejorar tu entorno. ¡Únete! ¡proyectate.mx es
-            una plataforma fácil, práctica y de libre acceso!</p>
-            <aside>
-                <img class="img-responsive center-block" src="static/img/iconografia-negro.png"> 
-            </aside>
-        </section><!-- Termina index02 -->
-
-        <section id="index03" class="bg-green text-white section">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2 class="text-bold">REGISTRATE</h2>
-                    <p>Registrándote en proyectate.mx, podrás almacenar tus
-                    proyectos en la plataforma y te daremos seguimiento para que
-                    los puedas implementar.</p>
-                </div>
-                <div class="col-md-4 text-center col-align">
-                    <a href="loginreg.html" class="btn btn-verde btn-lg">REGISTRATE</a>
-                </div>
-            </div><!-- Termina row -->
-        </section><!-- Termina index03 -->
-
-        <section id="index04" class="bg-white section">    
-            <div class="row">
-                <div class="col-sm-5 text-center col-mb">
-                    <h3 class="text-bold">NUESTROS MÓDULOS</h3>
-                    <p class="text-justify">En proyectate.mx aprenderás
-                    cómo planear, implementar, dar seguimiento, evaluar y
-                    comunicar proyectos para mejorar tu entorno.</p>
-                    <a href="categorias.html" class="btn btn-rojo btn-lg">VER MÓDULOS</a>
-                </div> 
-                <div class="col-sm-2 text-center">
-                    <img class="mt-60px hidden-xs" src="static/img/separador.svg" />
-                </div> 
-                <div class="col-sm-5 text-center col-mb">
-                    <h3 class="text-bold">CONÓCENOS</h3>
-                    <p class="text-justify">proyectate.mx es una iniciativa
-                    de Jóvenes por los ODS México A.C. ¡Conoce nuestro
-                    trabajo promoviendo los Objetivos de Desarrollo
-                    Sostenible!</p>
-                    <a class="btn btn-negro btn-lg">LEER MÁS</a>
-                </div> 
-            </div><!-- Termina row -->
-        </section><!-- Termina index04 -->
-    </div><!-- Termina el container principal -->
-
+    {% block contenido %}
+    {% endblock %}
         <!-- [TERMINA CONTENIDO] (No modificar nada después de esta línea)  -->
-    <!-- ============================================================== -->            
+    <!-- ============================================================== -->
     <footer class="container-fluid">
         <aside id="redes-sociales">
             <a href="#"><img src="static/img/facebook.svg"></a>
@@ -157,7 +75,7 @@
             </div>
         </nav>
     </footer>
-    
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script
         src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -169,6 +87,6 @@
         src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous">
-    </script>    
+    </script>
 </body>
 </html>

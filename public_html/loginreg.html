@@ -1,53 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extend "public_html/base.html" %}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PROYECTATE.MX</title>
-    <link rel="icon" type="image/png" href="static/img/favicon.ico"/>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" 
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" 
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto"
-        rel="stylesheet">
-    <link rel="stylesheet" href="static/css/main.css">
-</head>
+{% block contenido %}
 
-<body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed"
-                    data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Barra de navegacion</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html"><img src="static/img/Proyectate-logo.svg" height="20" alt="PROYECTATE.MX-logo"></a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">INICIO</a></li>
-                    <li><a href="acercade.html">ACERCA DE</a></li>
-                    <li><a href="categorias.html">CATEGORIAS</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right mr-50">
-                    <a class="btn btn-verde navbar-btn" href="categorias.html">COMENZAR</a>
-                    <a class="btn btn-verde navbar-btn" href="loginreg.html">LOGIN</a>
-                </ul>
-            </div><!-- Termina nav-collapse -->
-        </div><!-- Termina container-fluid -->
-    </nav><!-- Termina navbar -->
-    
-    <!-- ============================================================== -->
-    <!-- [INICIA CONTENIDO] (No modificar nada antes de esta línea)     -->
- 
    <div class="container-fluid login">
        <div class="row">
            <div class= "col-xs-12 col-sm-12 col-md-5 col-lg-5">
@@ -82,7 +36,7 @@
                     </form>
                 </div>
            </div>
-           
+
         <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-2 col-lg-5 col-lg-offset-2">
             <div class="fondo-gris-form">
                 <div class="login-titulo-dos">
@@ -102,10 +56,10 @@
                         <p>
                             La contraseña debe tener como minimo una minuscula, una mayuscula, un numero y minimo 8 caracteres
                         </p>
-                    </div>  
+                    </div>
                     <div class="form-group">
                         <input class="form-control" id="contrasenia2" type="password" placeholder="Vuelve a escribir la contraseña" onkeyup="validarPass2()" required>
-                    </div>  
+                    </div>
                     <div class="alert alert-danger" id="msjPassError2">
                         <p>Las contraseñas no son iguales</p>
                     </div>
@@ -368,46 +322,10 @@
                     </div>
                     <input class="btn btn-verde btn-lg center-block" type="submit" value="REGÍSTRATE" id="registrate">
                     <!--<a href="" class="btn btn-verde btn-lg center-block" >REGÍSTRATE</a>-->
-                    
+
                 </form>
             </div>
        </div>
     </div>
 </div>
-        
-    
-    <!-- [TERMINA CONTENIDO] (No modificar nada después de esta línea)  -->
-    <!-- ============================================================== -->
-                
-        <footer class="container-fluid">
-            <aside id="redes-sociales">
-                <a href="#"><img src="static/img/facebook.svg"></a>
-                <a href="#"><img src="static/img/twitter.svg"></a>
-            </aside>
-            <p> <b>Proyectate.mx es una iniciativa del Jóvenes por los ODS México AC.</b></p>
-            <p>Email: <a class="btn" href="mailto:contacto@proyectate.mx" target="_blank">contacto@proyectate.mx</a> </p>
-            <nav class="row text-center">
-                <div class="col col-sm-offset-2 col-sm-4">
-                    <a class="pie-menu-op btn" href="legal.html#disclaimer">Conoce nuestro Aviso legal</a>
-                </div>
-                <div class="col col-sm-4">
-                    <a class="pie-menu-op btn" href="legal.html">Aviso de Privacidad</a>
-                </div>
-            </nav>
-        </footer>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script
-        src="https://code.jquery.com/jquery-1.12.4.min.js"
-        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-        crossorigin="anonymous">
-    </script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-        crossorigin="anonymous">
-    </script>    
-    <script src="static/js/validaciones.js"></script>
-</body>
-</html>
+{% endblock %}

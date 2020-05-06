@@ -46,3 +46,9 @@ function recuperacontrasenia() {
     }
 }
 
+function activarBtn(){
+    var boton = document.getElementById("registrate").value;
+    if(boton != ""){
+        boton.disable = false;
+    }
+}

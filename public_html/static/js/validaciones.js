@@ -47,8 +47,9 @@ function recuperacontrasenia() {
 }
 
 function activarBtn(){
-    var boton = document.getElementById("registrate").value;
-    if(boton != ""){
-        boton.disable = false;
+    var lista = document.getElementById("pais").value;
+    var boton = document.getElementById("registrate");
+    if(lista != ""){
+        boton.disabled = false;
     }
 }

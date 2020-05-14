@@ -381,7 +381,7 @@ footer a.btn:hover {
     z-index: 0;
     text-align: center;
     margin-top: 0px;
-    padding-bottom: -100px;  
+    padding-bottom: -100px;
     padding-bottom: 80px;
     color: #fff;
 }
@@ -413,7 +413,7 @@ Color de fondo para el encabezado del sidebar: #f5f5f5
 Color fondo lista de lecciones: #fbfbfb
 Color lección activa: color: #fbfbfb, bg: #f5f5f5
 Color de fondo para la descripción: #eeeeee
-*/ 
+*/
 
 .sidebar {
     background-color: #f5f5f5;
@@ -538,7 +538,7 @@ Color de fondo para la descripción: #eeeeee
     background-color: #e73d25;
 }
 .bg-gray {
-    background-color: #eaeaea;    
+    background-color: #eaeaea;
 }
 /*** Colores de texto ***/
 .text-white {
@@ -680,7 +680,7 @@ Color de fondo para la descripción: #eeeeee
         login
 ***********************************************************/
 .login {
-    background-color: #dddedd; 
+    background-color: #dddedd;
     padding: 30px 30px 0px;
 }
 .fondo-gris-form {
@@ -697,7 +697,7 @@ Color de fondo para la descripción: #eeeeee
     z-index: 0;
     text-align: center;
     margin-top: 0px;
-    padding-bottom: -100px;  
+    padding-bottom: -100px;
     padding-bottom: 80px;
     color: #fff;
 }
@@ -734,6 +734,84 @@ input:valid {
 .login .link:hover {
     text-decoration: underline;
 }
+/**********Perfil*************/
+.fondo-gris-form {
+    background-color: #fff;
+    padding: 0px 35px 35px 35px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.login-titulo-perfil {
+    position: relative;
+    height: auto;
+    z-index: 0;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: -100px;
+    padding-bottom: 80px;
+    color: #fff;
+
+}
+
+.login-titulo-perfil::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -60px;
+    right: -60px;
+    top:-120px;
+    bottom: 0px;
+    background-image: url("../img/AJUSTESPERFIL_head.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.input-nombre {
+    width: auto;
+    font-size: calc(1em + 1vw);
+    border: 0px;
+}
+
+.linea-verde {
+    width: 100%;
+    height: auto;
+
+
+}
+.tarjeta {
+  width: 220px;
+  height: 190px;
+  margin: 10px auto;
+
+}
+.avatar {
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.tarjeta img {
+  height: 100%;
+}
+
+.mascara {
+  position: absolute;
+  left:0px;
+  right: 0px;
+  bottom: 0px;
+  top: 75%;
+  background-color: rgba(0, 180, 0, 0.45);
+  color: white;
+  font-size: 35px;
+  text-align: center;
+
+}
+/**********Termina Perfil*************/
 
 /*******************************************************************************
   Ajustes responsivo
@@ -877,7 +955,7 @@ input:valid {
     #categoria05 {
         background-image: url("../img/bg_comunicacion.jpg");
         background-size: cover;
-    }    
+    }
     #categoria05::before {
         background-color: rgba(0,0,0,0);
     }

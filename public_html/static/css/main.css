@@ -381,7 +381,7 @@ footer a.btn:hover {
     z-index: 0;
     text-align: center;
     margin-top: 0px;
-    padding-bottom: -100px;  
+    padding-bottom: -100px;
     padding-bottom: 80px;
     color: #fff;
 }
@@ -413,7 +413,7 @@ Color de fondo para el encabezado del sidebar: #f5f5f5
 Color fondo lista de lecciones: #fbfbfb
 Color lección activa: color: #fbfbfb, bg: #f5f5f5
 Color de fondo para la descripción: #eeeeee
-*/ 
+*/
 
 .sidebar {
     background-color: #f5f5f5;
@@ -538,7 +538,7 @@ Color de fondo para la descripción: #eeeeee
     background-color: #e73d25;
 }
 .bg-gray {
-    background-color: #eaeaea;    
+    background-color: #eaeaea;
 }
 /*** Colores de texto ***/
 .text-white {
@@ -658,7 +658,7 @@ Color de fondo para la descripción: #eeeeee
     float: left;
     margin-top: 20px;
      margin-bottom: 20px;
-   
+
  }
 .btn-derecha {
     float: right;
@@ -678,7 +678,7 @@ Color de fondo para la descripción: #eeeeee
 .row-concepto {
     padding-top: 20px;
     padding-bottom: 20px;
-    
+
 }
 .atexto {
   background-color: #fff;
@@ -690,7 +690,7 @@ Color de fondo para la descripción: #eeeeee
   border: 2px solid #ccc;
   box-shadow: 0px 0px 5px #ccc;
   margin-bottom: 30px;
-    
+
 }
 .bverde {
   border-color: #4b9418;
@@ -715,7 +715,7 @@ input[type="text"] {
   outline: none;
   font-size: 14px;
   margin-top: 5pt;
-    
+
 }
 .options {
   width: 100%;
@@ -760,8 +760,40 @@ input[type="number"] {
     }
 
 /**********Termina Actividad texto *************/
-/**********Termina Actividad texto *************/
-**************************************/
+
+/*******************************************************************************
+Actividad de opcion
+*******************************************************************************/
+
+.custom-radio1, .custom-radio2, .custom-radio3 {
+    background-color: #e2e2e2;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.custom-radio2 {
+    background-color: #b8e3a6;
+}
+
+.custom-radio3 {
+    background-color: #e37474;
+}
+
+.msn-correcto {
+    color: #4b9418;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.msn-incorrecto {
+    color: #e37474;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+/**********Termina Actividad de opcion *************/
 
 /**************************************
   Corrigiendo estilos de bootstrap
@@ -804,7 +836,7 @@ input[type="number"] {
         login
 ***********************************************************/
 .login {
-    background-color: #dddedd; 
+    background-color: #dddedd;
     padding: 30px 30px 0px;
 }
 .fondo-gris-form {
@@ -821,7 +853,7 @@ input[type="number"] {
     z-index: 0;
     text-align: center;
     margin-top: 0px;
-    padding-bottom: -100px;  
+    padding-bottom: -100px;
     padding-bottom: 80px;
     color: #fff;
 }
@@ -1001,7 +1033,7 @@ input:valid {
     #categoria05 {
         background-image: url("../img/bg_comunicacion.jpg");
         background-size: cover;
-    }    
+    }
     #categoria05::before {
         background-color: rgba(0,0,0,0);
     }

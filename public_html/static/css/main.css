@@ -636,7 +636,131 @@ Color de fondo para la descripción: #eeeeee
     padding-bottom: 0px;
 }
 /**************************************
-  Estilos para componentes
+  /**********Estilos de sidebar actividades *************/
+
+.sidebar aside ul ul li.activo {
+    background-color: #66b32e;
+    position: relative;
+}
+
+.sidebar aside ul ul li a {
+    color: #66b32e;
+}
+
+.desc-leccion p {
+    text-align: justify;
+}
+.navegacion {
+    margin-bottom: 5px;
+}
+
+.btn-izquierda {
+    float: left;
+    margin-top: 20px;
+     margin-bottom: 20px;
+   
+ }
+.btn-derecha {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/**********Termina estilos sidebar actividades*************/
+
+/**********- Estilos de actividad de texto *************/
+
+.act-texa {
+    color: #66b32e;
+}
+
+.row-concepto {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.atexto {
+  background-color: #fff;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 5px #ccc;
+  margin-bottom: 30px;
+    
+}
+.bverde {
+  border-color: #4b9418;
+  box-shadow: 0px 0px 5px #4b9418;
+}
+.brojo {
+  border-color: #e37474;
+  box-shadow: 0px 0px 5px #e37474;
+}
+.atexto textarea {
+    margin-bottom: 5px;
+}
+.brojo textarea {
+    color: #e37474;
+}
+
+input[type="text"] {
+  height: 20pt;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+  margin-top: 5pt;
+    
+}
+.options {
+  width: 100%;
+  height: 30pt;
+  margin-top: 5pt;
+  border-top: 1px solid #ddd;
+background-color: #fff;
+}
+.seperator {
+  display: inline;
+  border-left: 1px solid #ddd;
+  height: 20px;
+    }
+button {
+  margin: 0;
+  padding: 0;
+  height: 30pt;
+  width: 30pt;
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  color: #000;
+}
+button:active {
+  color: #333;
+}
+select {
+  height: 30pt;
+  -webkit-appearance: none;
+  border: 0;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  outline: none;
+}
+input[type="number"] {
+  height: 30pt;
+  border: 0;
+  padding: 0;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  outline: none;
+    }
+
+/**********Termina Actividad texto *************/
+/**********Termina Actividad texto *************/
 **************************************/
 
 /**************************************

@@ -5,7 +5,6 @@
     --carousel-item-margen: 5px;
     --carousel-num-items: 30;
 }
-
 body {
     background-color: #ffffff;
     font-family: "Roboto";
@@ -15,7 +14,10 @@ body {
     padding-top: 50px;
 }
 
-/* Estilos para el pié de página */
+
+/*++++++++++ Estilos para el pié de página +++++++++++++++*/
+
+
 footer {
     width: 100%;
     padding: 15px 0px;
@@ -24,21 +26,17 @@ footer {
     color: #fff;
     position: relative;
 }
-
 #redes-sociales {
     margin: 0px auto 20px;
     text-align: center;
 }
-
 #redes-sociales a {
     display: inline-block;
     margin: 0px 5px;
 }
-
 footer p {
     text-align: center;
 }
-
 footer a {
     color: #fff;
     text-decoration: underline;
@@ -47,7 +45,10 @@ footer a.btn:hover {
     color: var(--verde);
 }
 
-/*** Estilos para bloques o secciones ***/
+
+/*++++++++++ Estilos para bloques o secciones +++++++++++++++*/
+
+
 .section {
     margin: 0px -15px;  /* Se anula el padding del container */
     padding: 20px 20px;  /* Se asigna el nuevo padding */
@@ -61,7 +62,10 @@ footer a.btn:hover {
     clear: both;
 }
 
+
 /*++++++++++ Estilos para inicio  +++++++++++++++*/
+
+
 #index01 {
     position: relative;
     z-index: 0;
@@ -122,6 +126,8 @@ footer a.btn:hover {
 
 
 /*********** Estilos para Acerca de *************/
+
+
 #acercade02 {
     position: relative;
     z-index: 0;
@@ -164,6 +170,8 @@ footer a.btn:hover {
 
 
 /*++++++++++ Estilos para legal  +++++++++++++++*/
+
+
 .marcadeagua {
     background-color: #fff;
     background-image: url("../img/marcadeagua_legal.svg");
@@ -213,7 +221,11 @@ footer a.btn:hover {
     background-repeat: no-repeat;
 }
 
+
+
 /*++++++++++ Estilos para cateogrías +++++++++++++++*/
+
+
 .categoria {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -465,14 +477,15 @@ Color de fondo para la descripción: #eeeeee
     position: absolute;
     right: 10px;
     font-weight: bold;
+    
 }
-.desc-leccion {
+.relacion {
     background-color: #eeeeee;
     padding-top: 30px;
     padding-bottom: 30px;
     padding: 30px 30px;
 }
-.desc-leccion p {
+.relacion p {
     text-align: justify;
 }
 
@@ -481,13 +494,13 @@ Color de fondo para la descripción: #eeeeee
  Estilos adicionales a bootstrap para proyectate.mx
 **********************************************************************/
 
+
 /*** Botones ***/
 .btn-verde {
     color: #fff;
     background-color: #65b32e;
     border-color: #559627;
 }
-
 .btn-verde:hover {
     color: #fff;
     background-color: #549526;
@@ -498,7 +511,6 @@ Color de fondo para la descripción: #eeeeee
     background-color: #333;
     border-color: #222;
 }
-
 .btn-negro:hover {
     color: #fff;
     background-color: #000;
@@ -636,164 +648,8 @@ Color de fondo para la descripción: #eeeeee
     padding-bottom: 0px;
 }
 /**************************************
-  /**********Estilos de sidebar actividades *************/
-
-.sidebar aside ul ul li.activo {
-    background-color: #66b32e;
-    position: relative;
-}
-
-.sidebar aside ul ul li a {
-    color: #66b32e;
-}
-
-.desc-leccion p {
-    text-align: justify;
-}
-.navegacion {
-    margin-bottom: 5px;
-}
-
-.btn-izquierda {
-    float: left;
-    margin-top: 20px;
-     margin-bottom: 20px;
-
- }
-.btn-derecha {
-    float: right;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
-/**********Termina estilos sidebar actividades*************/
-
-/**********- Estilos de actividad de texto *************/
-
-.act-texa {
-    color: #66b32e;
-}
-
-.row-concepto {
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-}
-.atexto {
-  background-color: #fff;
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  border: 2px solid #ccc;
-  box-shadow: 0px 0px 5px #ccc;
-  margin-bottom: 30px;
-
-}
-.bverde {
-  border-color: #4b9418;
-  box-shadow: 0px 0px 5px #4b9418;
-}
-.brojo {
-  border-color: #e37474;
-  box-shadow: 0px 0px 5px #e37474;
-}
-.atexto textarea {
-    margin-bottom: 5px;
-}
-.brojo textarea {
-    color: #e37474;
-}
-
-input[type="text"] {
-  height: 20pt;
-  width: 100%;
-  padding: 0;
-  border: 0;
-  outline: none;
-  font-size: 14px;
-  margin-top: 5pt;
-
-}
-.options {
-  width: 100%;
-  height: 30pt;
-  margin-top: 5pt;
-  border-top: 1px solid #ddd;
-background-color: #fff;
-}
-.seperator {
-  display: inline;
-  border-left: 1px solid #ddd;
-  height: 20px;
-    }
-button {
-  margin: 0;
-  padding: 0;
-  height: 30pt;
-  width: 30pt;
-  background-color: #fff;
-  border: 0;
-  cursor: pointer;
-  color: #000;
-}
-button:active {
-  color: #333;
-}
-select {
-  height: 30pt;
-  -webkit-appearance: none;
-  border: 0;
-  padding-left: 5pt;
-  padding-right: 5pt;
-  outline: none;
-}
-input[type="number"] {
-  height: 30pt;
-  border: 0;
-  padding: 0;
-  padding-left: 5pt;
-  padding-right: 5pt;
-  outline: none;
-    }
-
-/**********Termina Actividad texto *************/
-
-/*******************************************************************************
-Actividad de opcion
-*******************************************************************************/
-
-.custom-radio1, .custom-radio2, .custom-radio3 {
-    background-color: #e2e2e2;
-    border-radius: 15px;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-
-.custom-radio2 {
-    background-color: #b8e3a6;
-}
-
-.custom-radio3 {
-    background-color: #e37474;
-}
-
-.msn-correcto {
-    color: #4b9418;
-    padding: 5px;
-    margin-left: 15px;
-}
-
-.msn-incorrecto {
-    color: #e37474;
-    padding: 5px;
-    margin-left: 15px;
-}
-
-/**********Termina Actividad de opcion *************/
+  Estilos para componentes
+**************************************/
 
 /**************************************
   Corrigiendo estilos de bootstrap
@@ -890,10 +746,338 @@ input:valid {
 .login .link:hover {
     text-decoration: underline;
 }
+/**********Perfil*************/
+.fondo-gris-form {
+    background-color: #fff;
+    padding: 0px 35px 35px 35px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.login-titulo-perfil {
+    position: relative;
+    height: auto;
+    z-index: 0;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: -100px;
+    padding-bottom: 80px;
+    color: #fff;
+
+}
+
+.login-titulo-perfil::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: -60px;
+    right: -60px;
+    top:-120px;
+    bottom: 0px;
+    background-image: url("../img/AJUSTESPERFIL_head.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.input-nombre {
+    width: auto;
+    font-size: calc(1em + 1vw);
+    border: 0px;
+}
+
+.linea-verde {
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta {
+  width: 220px;
+  height: 190px;
+  margin: 10px auto;
+
+}
+.avatar {
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.tarjeta img {
+  height: 100%;
+}
+
+.mascara {
+  position: absolute;
+  left:0px;
+  right: 0px;
+  bottom: 0px;
+  top: 75%;
+  background-color: rgba(0, 180, 0, 0.45);
+  color: white;
+  font-size: 35px;
+  text-align: center;
+
+}
+
+.form-group {
+    padding: 4px 0px;
+}
+
+.btn-gc {
+    height: auto;
+    width: 100%;
+    border: none;
+}
+
+
+.btn-gc:hover {
+    color: #fff;
+    background-color: #549526;
+    border-color: #498221;
+}
+
+
+/**********Termina Perfil*************/
+
+/**********Estilos de sidebar actividades *************/
+
+.sidebar aside ul ul li.activo {
+    background-color: #66b32e;
+    position: relative;
+}
+
+.sidebar aside ul ul li a {
+    color: #66b32e;
+}
+
+.desc-leccion p {
+    text-align: justify;
+}
+.navegacion {
+    margin-bottom: 5px;
+}
+
+.btn-izquierda {
+    float: left;
+    margin-top: 20px;
+     margin-bottom: 20px;
+   
+ }
+.btn-derecha {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/**********Termina estilos sidebar actividades*************/
+
+/**********- Estilos de actividad de texto *************/
+
+.act-texa {
+    color: #66b32e;
+}
+
+.row-concepto {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.atexto {
+  background-color: #fff;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 5px #ccc;
+  margin-bottom: 30px;
+    
+}
+.bverde {
+  border-color: #4b9418;
+  box-shadow: 0px 0px 5px #4b9418;
+}
+.brojo {
+  border-color: #e37474;
+  box-shadow: 0px 0px 5px #e37474;
+}
+.atexto textarea {
+    margin-bottom: 5px;
+}
+.brojo textarea {
+    color: #e37474;
+}
+
+input[type="text"] {
+  height: 20pt;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+  margin-top: 5pt;
+    
+}
+.options {
+  width: 100%;
+  height: 30pt;
+  margin-top: 5pt;
+  border-top: 1px solid #ddd;
+background-color: #fff;
+}
+.seperator {
+  display: inline;
+  border-left: 1px solid #ddd;
+  height: 20px;
+    }
+button {
+  margin: 0;
+  padding: 0;
+  height: 30pt;
+  width: 30pt;
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  color: #000;
+}
+button:active {
+  color: #333;
+}
+select {
+  height: 30pt;
+  -webkit-appearance: none;
+  border: 0;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  outline: none;
+}
+input[type="number"] {
+  height: 30pt;
+  border: 0;
+  padding: 0;
+  padding-left: 5pt;
+  padding-right: 5pt;
+  outline: none;
+    }
+
+/**********Termina Actividad texto *************/
+
+/*******************************************************************************
+Actividad de opcion
+*******************************************************************************/
+
+.custom-radio1, .custom-radio2, .custom-radio3 {
+    background-color: #e2e2e2;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px; 
+    font-weight: bold;
+}
+
+.custom-radio2 {
+    background-color: #b8e3a6;
+}
+
+.custom-radio3 {
+    background-color: #e37474;
+}
+
+.msn-correcto {
+    color: #4b9418;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.msn-incorrecto {
+    color: #e37474;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+/**********Termina Actividad de opcion *************/
+
+
+/*******************************************************************************
+Actividad de relación
+*******************************************************************************/
+
+.concept {
+    margin-bottom: 20px;
+}
+
+.desc-trj {
+    margin-bottom: 35px;
+}
+
+.card-concepto h4 {
+    padding: 62px 20px;
+    font-weight: bolder;
+    
+}
+.card-concepto{
+    background-color: #fafafa;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    padding: 10px 10px; 
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #8b8b8b;
+}
+
+.card-definicion {
+    background-color: #fafafa;
+    height: auto;
+    margin-top: 25px;
+    padding: 20px 20px; 
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #8b8b8b;
+}
+
+.c-true {
+    border:#b8e3a6 5px solid; 
+    border-radius: 15px;
+    color: #4b9418;
+    background-color: #fafafa;
+}
+
+.c-false {
+    border:#e37474 5px solid; 
+    border-radius: 15px;
+    color: #941824;
+    background-color: #ffffff;
+    
+}
+
+.c-bloq {
+    border:#616161 5px solid; 
+    border-radius: 15px;
+    color: #313131;
+    background-color: white;
+    
+}
+
+
+
+
+
+
+
+
+/**********Termina Actividad relacion *************/
+
+
+
 
 /*******************************************************************************
   Ajustes responsivo
 *******************************************************************************/
+
 @media (min-width: 768px) {
     /*** Estilos para bloques o secciones ***/
     .section {
@@ -941,17 +1125,37 @@ input:valid {
     .brochazo-rojo::after {
         right: -35px;
     }
-    /*Ajustes para login*/
+    /*************Ajustes para login******************/
     .login {
         padding: 30px 50px 0px;
     }
-    /*** Estilos relacionados con cateogrías ***/
+    /************ Estilos relacionados con cateogrías *************/
+    
     .categoria .detalle .logo {
         text-align: right;
     }
     .categoria .detalle .descripcion {
         text-align: left;
     }
+    /*************Ajustes para perfil******************/
+    
+    .input-nombre {
+        margin-top: 80px;
+        font-size: calc(1.5em + 1vw);
+        height: auto;        
+    }
+    
+    .linea-verde {
+    width: 120%;
+    height: auto;
+}
+
+        
+    .btn-gc {
+    height: auto;
+    width: 30%;
+    border: none;
+}
 }
 
 @media (min-width: 992px) {

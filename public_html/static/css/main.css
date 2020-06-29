@@ -790,9 +790,8 @@ input:valid {
 .linea-verde {
     width: 100%;
     height: auto;
-
-
 }
+
 .tarjeta {
   width: 220px;
   height: 190px;
@@ -823,6 +822,25 @@ input:valid {
   text-align: center;
 
 }
+
+.form-group {
+    padding: 4px 0px;
+}
+
+.btn-gc {
+    height: auto;
+    width: 100%;
+    border: none;
+}
+
+
+.btn-gc:hover {
+    color: #fff;
+    background-color: #549526;
+    border-color: #498221;
+}
+
+
 /**********Termina Perfil*************/
 
 /**********Estilos de sidebar actividades *************/
@@ -1059,6 +1077,7 @@ Actividad de relación
 /*******************************************************************************
   Ajustes responsivo
 *******************************************************************************/
+
 @media (min-width: 768px) {
     /*** Estilos para bloques o secciones ***/
     .section {
@@ -1106,17 +1125,37 @@ Actividad de relación
     .brochazo-rojo::after {
         right: -35px;
     }
-    /*Ajustes para login*/
+    /*************Ajustes para login******************/
     .login {
         padding: 30px 50px 0px;
     }
-    /*** Estilos relacionados con cateogrías ***/
+    /************ Estilos relacionados con cateogrías *************/
+    
     .categoria .detalle .logo {
         text-align: right;
     }
     .categoria .detalle .descripcion {
         text-align: left;
     }
+    /*************Ajustes para perfil******************/
+    
+    .input-nombre {
+        margin-top: 80px;
+        font-size: calc(1.5em + 1vw);
+        height: auto;        
+    }
+    
+    .linea-verde {
+    width: 120%;
+    height: auto;
+}
+
+        
+    .btn-gc {
+    height: auto;
+    width: 30%;
+    border: none;
+}
 }
 
 @media (min-width: 992px) {

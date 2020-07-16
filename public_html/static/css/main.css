@@ -1086,6 +1086,9 @@ Actividad de relación
         text-align: left;
     }
     /*************Ajustes para perfil******************/
+    .perfil-titulo::after{
+	    background-image: url("../img/ajustesperfil_head.png");
+    }
     .perfil .input-nombre {
         margin-top: 80px;
         font-size: calc(1em + 0.5vw);

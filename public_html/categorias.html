@@ -1,20 +1,20 @@
-{% extend "public_html/base.html" %}
+{% extends "public_html/base.html" %}
 
 {% block contenido %}
-
     <div class="bg-white text-white">
-
+       
+	{% if planeacion %}
         <!-- Inicia Categoría 01: Planeación -->
         <section id="categoria01" class="section categoria">
             <div class="row detalle">
                 <aside class="col-xs-12 col-sm-offset-5 col-sm-2 logo">
-                    <img src="static/img/ico-planeacion-blanco.png" alt="icono planeación" />
+                    <img src="/static/img/ico-planeacion-blanco.png" alt="icono planeación" />
                 </aside>
                 <aside class="col-xs-12 col-sm-5 descripcion">
                     <h3 class="text-bold">PLANEACIÓN</h3>
-                    <h4 class="subtitulo text-bold text-green">5 MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
+		    <h4 class="subtitulo text-bold text-green">{{ planeacion | length }} MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
                     <p class="text-justify">Hay algo que no está bien en tu entorno y te has dado cuenta de ello. ¿Cuáles pasos tienes que seguir para aprender a identificar problemas y para empezar a planear soluciones para resolverlos?</p>
-                </aside>
+                </aside> 
             </div><!-- Termina row detalle -->
             <!-- Inicia carousel -->
             <div class="MultiCarousel" id="MultiCarousel01">
@@ -33,153 +33,62 @@
                    <!-- Contiene los elementos del Carousel -->
                    <div class="Carousel-viewer">
                      <div class="Carousel-slider">
+			{% for m in planeacion %}
                         <div class="Carousel-item">
-                             <a href="modulo-00.html">
-                                  <div class="modulo text-center terminado">
-                                    <aside>
-                                        <img src="static/img/cat_icono_planeacion_v.png" alt="logo planeación" />
-                                    </aside>
-                                    <p>Análisis FODA</p>
-                                  </div>
-                              </a>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
-                        <div class="Carousel-item">
-                              <a href="modulo-01.html">
+                             <a href="/modulo-00.html">
+                                  <!-- div class="modulo text-center terminado"-->
                                   <div class="modulo text-center">
                                     <aside>
-                                        <img src="static/img/ico-planeacion-blanco.png" alt="logo planeación" />
+                                        <!-- img src="/static/img/cat_icono_planeacion_v.png" alt="logo planeación" / -->
+                                        <img src="/static/img/ico-planeacion-blanco.png" alt="logo planeación" />
                                     </aside>
-                                    <p>Matriz de marco lógico (II)</p>
+				    <p>{{ m.nombre }}</p>
                                   </div>
                               </a>
                               <div class="barra">
                                   <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+					  <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="0" aria-valuemin="{{ m.avance }}" aria-valuemax="100" style="width: {{ m.avance }}%;">
                                       </div>
                                   </div>
                               </div>
                         </div>
-
-                        <div class="Carousel-item">
-                              <a href="modulo-01.html">
-                                  <div class="modulo text-center">
-                                   <aside>
-                                        <img src="static/img/ico-planeacion-blanco.png" alt="logo planeación" />
-                                   </aside>
-                                    <p>Identificación de problemas (III)</p>
-                                  </div>
-                              </a>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
-                        <div class="Carousel-item">
-                              <a href="modulo-01.html">
-                                  <div class="modulo text-center">
-                                   <aside>
-                                        <img src="static/img/ico-planeacion-blanco.png" alt="logo planeación" />
-                                   </aside>
-                                    <p>Módulo 4</p>
-                                  </div>
-                              </a>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
-                        <div class="Carousel-item">
-                              <a href="modulo-01.html">
-                                  <div class="modulo text-center">
-                                   <aside>
-                                        <img src="static/img/ico-planeacion-blanco.png" alt="logo planeación" />
-                                   </aside>
-                                    <p>Módulo 5</p>
-                                  </div>
-                              </a>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
-                        <div class="Carousel-item">
-                              <a href="modulo-01.html">
-                                  <div class="modulo text-center">
-                                   <aside>
-                                        <img src="static/img/ico-planeacion-blanco.png" alt="logo planeación" />
-                                   </aside>
-                                    <p>Módulo 6</p>
-                                  </div>
-                              </a>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
-                        <div class="Carousel-item">
-                              <a href="modulo-01.html">
-                                  <div class="modulo text-center">
-                                   <aside>
-                                        <img src="static/img/ico-planeacion-blanco.png" alt="logo planeación" />
-                                   </aside>
-                                    <p>Módulo N</p>
-                                  </div>
-                              </a>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
+			{% endfor %}
+                        
                      </div><!-- Termina Carousel slider -->
                    </div><!-- Termina Carousel-viewer -->
                </div><!-- Termina row que contiene a la los elementos de la galería -->
                <div class="MultiCarousel-indicators">
                     <!-- Indicators -->
                     <ol>
-                      <li data-target="#MultiCarousel01" data-slide-to="0" class="active"></li>
-                      <li data-target="#MultiCarousel01" data-slide-to="1"></li>
-                      <li data-target="#MultiCarousel01" data-slide-to="2"></li>
+		      {% for m in planeacion %}
+		        {% if forloop.first %}
+		        <li data-target="#MultiCarousel01" data-slide-to="{{ forloop.counter0 }}" class="active"></li>
+			{% else %}
+                        <li data-target="#MultiCarousel01" data-slide-to="{{ forloop.counter0 }}"></li>
+			{% endif %}
+		      {% endfor %}
                     </ol>
                </div>
-
+                        
             </div><!-- Termina MultiCarousel -->
-
+              
         </section><!-- Termina categoria01 -->
+	{% endif %}
 
+	{% if implementacion %}
         <!-- Inicia Categoría 02: Implementación -->
         <section id="categoria02" class="section categoria">
             <div class="row detalle">
-                <aside class="col-xs-12 col-sm-2 logo">
-                    <img src="static/img/ico-imple-blanco.png" alt="icono implementación" />
+                <aside class="col-xs-12 col-sm-offset-5 col-sm-2 logo">
+                    <img src="/static/img/ico-implementacion-blanco.png" alt="icono implementación" />
                 </aside>
                 <aside class="col-xs-12 col-sm-5 descripcion">
                     <h3 class="text-bold">IMPLEMENTACIÓN</h3>
-                    <h4 class="subtitulo text-bold text-green">5 MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
+		    <h4 class="subtitulo text-bold text-green">{{ implementacion | length }} MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
                     <p class="text-justify">Para echar a andar tu proyecto, muchas veces necesitas el apoyo y la organización de otras personas. ¿Qué es lo que necesitas hacer cuando ya sabes de qué trata tu proyecto y sólo necesitas empezar?</p>
-                </aside>
+                </aside> 
             </div><!-- Termina row detalle -->
+            <!-- Inicia carousel -->
             <div class="MultiCarousel" id="MultiCarousel02">
                <div class="MultiCarousel-Container">
                    <!-- Botones izq y der -->
@@ -196,86 +105,62 @@
                    <!-- Contiene los elementos del Carousel -->
                    <div class="Carousel-viewer">
                      <div class="Carousel-slider">
+			{% for m in implementacion %}
                         <div class="Carousel-item">
-                              <div class="modulo text-center terminado">
-                                <img src="static/img/cat_imple_v.png" alt="logo planeación" />
-                                <p>Identificación de problemas</p>
-                              </div>
+                             <a href="/modulo-00.html">
+                                  <!-- div class="modulo text-center terminado"-->
+                                  <div class="modulo text-center">
+                                    <aside>
+                                        <!-- img src="/static/img/cat_icono_planeacion_v.png" alt="logo planeación" / -->
+                                        <img src="/static/img/ico-implementacion-blanco.png" alt="logo implementacion" />
+                                    </aside>
+				    <p>{{ m.nombre }}</p>
+                                  </div>
+                              </a>
                               <div class="barra">
                                   <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					  <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="0" aria-valuemin="{{ m.avance }}" aria-valuemax="100" style="width: {{ m.avance }}%;">
                                       </div>
                                   </div>
                               </div>
                         </div>
-
-                        <div class="Carousel-item">
-                              <div class="modulo text-center">
-                                <img src="static/img/ico-imple-blanco.png" alt="logo planeación" />
-                                <p>Identificación de problemas</p>
-                              </div>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
-                        <div class="Carousel-item">
-                              <div class="modulo text-center">
-                                <img src="static/img/ico-imple-blanco.png" alt="logo planeación" />
-                                <p>Identificación de problemas</p>
-                              </div>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
-                        <div class="Carousel-item">
-                              <div class="modulo text-center">
-                                <img src="static/img/ico-imple-blanco.png" alt="icono de cateogría" />
-                                <p>Identificación de problemas</p>
-                              </div>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
+			{% endfor %}
+                        
                      </div><!-- Termina Carousel slider -->
                    </div><!-- Termina Carousel-viewer -->
                </div><!-- Termina row que contiene a la los elementos de la galería -->
                <div class="MultiCarousel-indicators">
                     <!-- Indicators -->
                     <ol>
-                      <li data-target="#MultiCarousel02" data-slide-to="0" class="active"></li>
-                      <li data-target="#MultiCarousel02" data-slide-to="1"></li>
-                      <li data-target="#MultiCarousel02" data-slide-to="2"></li>
+		      {% for m in implementacion %}
+		        {% if forloop.first %}
+		        <li data-target="#MultiCarousel02" data-slide-to="{{ forloop.counter0 }}" class="active"></li>
+			{% else %}
+                        <li data-target="#MultiCarousel02" data-slide-to="{{ forloop.counter0 }}"></li>
+			{% endif %}
+		      {% endfor %}
                     </ol>
                </div>
-
+                        
             </div><!-- Termina MultiCarousel -->
+              
         </section><!-- Termina categoria02 -->
+	{% endif %}
 
+	{% if seguimiento %}
         <!-- Inicia Categoría 03: Seguimiento -->
         <section id="categoria03" class="section categoria">
             <div class="row detalle">
                 <aside class="col-xs-12 col-sm-offset-5 col-sm-2 logo">
-                    <img src="static/img/ico-seguimiento-blanco.png" alt="icono seguimiento" />
+                    <img src="/static/img/ico-seguimiento-blanco.png" alt="icono seguimiento" />
                 </aside>
                 <aside class="col-xs-12 col-sm-5 descripcion">
                     <h3 class="text-bold">SEGUIMIENTO</h3>
-                    <h4 class="subtitulo text-bold text-green">5 MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
+		    <h4 class="subtitulo text-bold text-green">{{ seguimiento | length }} MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
                     <p class="text-justify">Cuando empiezas tu proyecto, una de las cosas más importantes es que siga andando. ¡El dar seguimiento es una carrera de resistencia! ¿Qué hay que hacer para no perder el hilo del trabajo a la mitad del camino?</p>
-                </aside>
+                </aside> 
             </div><!-- Termina row detalle -->
-            <div class="MultiCarousel" id="MultiCarousel02">
+            <div class="MultiCarousel" id="MultiCarousel03">
                <div class="MultiCarousel-Container">
                    <!-- Botones izq y der -->
                    <div class="Left" onclick="leftClick(this)">
@@ -291,86 +176,60 @@
                    <!-- Contiene los elementos del Carousel -->
                    <div class="Carousel-viewer">
                      <div class="Carousel-slider">
+			{% for m in seguimiento %}
                         <div class="Carousel-item">
-                              <div class="modulo text-center terminado">
-                                <img src="static/img/cat_icono_seguimiento_v.png" alt="icono de cateogria" />
-                                <p>Identificación de problemas</p>
-                              </div>
+                             <a href="/modulo-00.html">
+                                  <!-- div class="modulo text-center terminado"-->
+                                  <div class="modulo text-center">
+                                    <aside>
+                                        <!-- img src="/static/img/cat_icono_seguimiento.png" alt="logo seguimiento" / -->
+                                        <img src="/static/img/ico-seguimiento-blanco.png" alt="logo seguimiento" />
+                                    </aside>
+				    <p>{{ m.nombre }}</p>
+                                  </div>
+                              </a>
                               <div class="barra">
                                   <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					  <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="0" aria-valuemin="{{ m.avance }}" aria-valuemax="100" style="width: {{ m.avance }}%;">
                                       </div>
                                   </div>
                               </div>
                         </div>
-
-                        <div class="Carousel-item">
-                              <div class="modulo text-center">
-                                <img src="static/img/ico-seguimiento-blanco.png" alt="icono de cateogria" />
-                                <p>Identificación de problemas</p>
-                              </div>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
-                        <div class="Carousel-item">
-                              <div class="modulo text-center">
-                                <img src="static/img/ico-seguimiento-blanco.png" alt="icono de cateogria" />
-                                <p>Identificación de problemas</p>
-                              </div>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
-                        <div class="Carousel-item">
-                              <div class="modulo text-center">
-                                <img src="static/img/ico-seguimiento-blanco.png" alt="icono de cateogria" />
-                                <p>Identificación de problemas</p>
-                              </div>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
+			{% endfor %}
                      </div><!-- Termina Carousel slider -->
                    </div><!-- Termina Carousel-viewer -->
                </div><!-- Termina row que contiene a la los elementos de la galería -->
                <div class="MultiCarousel-indicators">
                     <!-- Indicators -->
                     <ol>
-                      <li data-target="#MultiCarousel02" data-slide-to="0" class="active"></li>
-                      <li data-target="#MultiCarousel02" data-slide-to="1"></li>
-                      <li data-target="#MultiCarousel02" data-slide-to="2"></li>
+		      {% for m in seguimiento %}
+		        {% if forloop.first %}
+		        <li data-target="#MultiCarousel03" data-slide-to="{{ forloop.counter0 }}" class="active"></li>
+			{% else %}
+                        <li data-target="#MultiCarousel03" data-slide-to="{{ forloop.counter0 }}"></li>
+			{% endif %}
+		      {% endfor %}
                     </ol>
                </div>
-
+                        
             </div><!-- Termina MultiCarousel -->
         </section><!-- Termina categoria03 -->
+	{% endif %}
 
+	{% if evaluacion %}
            <!-- Inicia Categoría 04: Evaluación -->
         <section id="categoria04" class="section categoria">
             <div class="row detalle">
                 <aside class="col-xs-12 col-sm-2 logo">
-                    <img src="static/img/ico-eva-blanco.png" alt="icono evaluacion" />
+                    <img src="/static/img/ico-eva-blanco.png" alt="icono evaluacion" />
                 </aside>
                 <aside class="col-xs-12 col-sm-5 descripcion">
                     <h3 class="text-bold">EVALUACIÓN</h3>
-                    <h4 class="subtitulo text-bold text-green">5 MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
+		    <h4 class="subtitulo text-bold text-green">{{ evaluacion | length }} MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
                     <p class="text-justify">Ahora que tu proyecto se está llevando a cabo, ¿cómo puedes asegurarte de que está funcionando? ¿Cómo puedes saber que está teniendo los efectos que esperabas?</p>
-                </aside>
+                </aside> 
             </div><!-- Termina row detalle -->
-            <div class="MultiCarousel" id="MultiCarousel02">
+            <div class="MultiCarousel" id="MultiCarousel04">
                <div class="MultiCarousel-Container">
                    <!-- Botones izq y der -->
                    <div class="Left" onclick="leftClick(this)">
@@ -386,60 +245,60 @@
                    <!-- Contiene los elementos del Carousel -->
                    <div class="Carousel-viewer">
                      <div class="Carousel-slider">
+			{% for m in seguimiento %}
                         <div class="Carousel-item">
-                              <div class="modulo text-center terminado">
-                                <img src="static/img/cat_icono_eva_v.png" alt="icono de cateogria" />
-                                <p>Identificación de problemas</p>
-                              </div>
+                             <a href="/modulo-00.html">
+                                  <!-- div class="modulo text-center terminado"-->
+                                  <div class="modulo text-center">
+                                    <aside>
+					<!--img src="/static/img/cat_icono_eva_v.png" alt="icono de cateogria" /-->
+					<img src="/static/img/ico-eva-blanco.png" alt="icono de cateogria" />
+                                    </aside>
+				    <p>{{ m.nombre }}</p>
+                                  </div>
+                              </a>
                               <div class="barra">
                                   <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					  <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="0" aria-valuemin="{{ m.avance }}" aria-valuemax="100" style="width: {{ m.avance }}%;">
                                       </div>
                                   </div>
                               </div>
                         </div>
-
-                        <div class="Carousel-item">
-                              <div class="modulo text-center">
-                                <img src="static/img/ico-eva-blanco.png" alt="icono de cateogria" />
-                                <p>Identificación de problemas</p>
-                              </div>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
+			{% endfor %}
                      </div><!-- Termina Carousel slider -->
                    </div><!-- Termina Carousel-viewer -->
                </div><!-- Termina row que contiene a la los elementos de la galería -->
                <div class="MultiCarousel-indicators">
                     <!-- Indicators -->
                     <ol>
-                      <li data-target="#MultiCarousel02" data-slide-to="0" class="active"></li>
-                      <li data-target="#MultiCarousel02" data-slide-to="1"></li>
-                      <li data-target="#MultiCarousel02" data-slide-to="2"></li>
+		      {% for m in seguimiento %}
+		        {% if forloop.first %}
+		        <li data-target="#MultiCarousel04" data-slide-to="{{ forloop.counter0 }}" class="active"></li>
+			{% else %}
+                        <li data-target="#MultiCarousel04" data-slide-to="{{ forloop.counter0 }}"></li>
+			{% endif %}
+		      {% endfor %}
                     </ol>
                </div>
-
+                        
             </div><!-- Termina MultiCarousel -->
         </section><!-- Termina categoria04 -->
+	{% endif %}
 
-              <!-- Inicia Categoría 05: Comunicación -->
+	{% if comunicacion %}
+        <!-- Inicia Categoría 05: Comunicación -->
         <section id="categoria05" class="section categoria">
             <div class="row detalle">
                 <aside class="col-xs-12 col-sm-offset-5 col-sm-2 logo">
-                    <img src="static/img/ico-comunicacion-blanco.png" alt="icono comunicacion" />
+                    <img src="/static/img/ico-comunicacion-blanco.png" alt="icono comunicacion" />
                 </aside>
                 <aside class="col-xs-12 col-sm-5 descripcion">
                     <h3 class="text-bold">COMUNICACIÓN</h3>
-                    <h4 class="subtitulo text-bold text-green">5 MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
+		    <h4 class="subtitulo text-bold text-green">{{ evaluacion | length }} MÓDULOS <span class="glyphicon glyphicon-triangle-bottom"></span></h4>
                     <p class="text-justify">Has concluido con tu proyecto. ¡Felicidades! Ahora es muy importante que puedas asimilar los aprendizajes que tu proyecto te deje, así como decirle a otras personas cuáles son los resultados que obtuviste.</p>
-                </aside>
+                </aside> 
             </div><!-- Termina row detalle -->
-            <div class="MultiCarousel" id="MultiCarousel02">
+            <div class="MultiCarousel" id="MultiCarousel05">
                <div class="MultiCarousel-Container">
                    <!-- Botones izq y der -->
                    <div class="Left" onclick="leftClick(this)">
@@ -455,47 +314,47 @@
                    <!-- Contiene los elementos del Carousel -->
                    <div class="Carousel-viewer">
                      <div class="Carousel-slider">
+			{% for m in seguimiento %}
                         <div class="Carousel-item">
-                              <div class="modulo text-center terminado">
-                                <img src="static/img/cat_icono_comunicacion_v.png" alt="icono de cateogria" />
-                                <p>Identificación de problemas</p>
-                              </div>
+                             <a href="/modulo-00.html">
+                                  <!-- div class="modulo text-center terminado"-->
+                                  <div class="modulo text-center">
+                                    <aside>
+					<!--img src="/static/img/cat_icono_comunicacion_v.png" alt="icono de cateogria" /-->
+					<img src="/static/img/ico-comunicacion-blanco.png" alt="icono de cateogria" />
+                                    </aside>
+				    <p>{{ m.nombre }}</p>
+                                  </div>
+                              </a>
                               <div class="barra">
                                   <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					  <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="0" aria-valuemin="{{ m.avance }}" aria-valuemax="100" style="width: {{ m.avance }}%;">
                                       </div>
                                   </div>
                               </div>
                         </div>
-
-                        <div class="Carousel-item">
-                              <div class="modulo text-center">
-                                <img src="static/img/ico-comunicacion-blanco.png" alt="icono de cateogria" />
-                                <p>Identificación de problemas</p>
-                              </div>
-                              <div class="barra">
-                                  <div class="progress">
-                                      <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                      </div>
-                                  </div>
-                              </div>
-                        </div>
-
+			{% endfor %}
+                        
                      </div><!-- Termina Carousel slider -->
                    </div><!-- Termina Carousel-viewer -->
                </div><!-- Termina row que contiene a la los elementos de la galería -->
                <div class="MultiCarousel-indicators">
                     <!-- Indicators -->
                     <ol>
-                      <li data-target="#MultiCarousel02" data-slide-to="0" class="active"></li>
-                      <li data-target="#MultiCarousel02" data-slide-to="1"></li>
-                      <li data-target="#MultiCarousel02" data-slide-to="2"></li>
+		      {% for m in seguimiento %}
+		        {% if forloop.first %}
+		        <li data-target="#MultiCarousel05" data-slide-to="{{ forloop.counter0 }}" class="active"></li>
+			{% else %}
+                        <li data-target="#MultiCarousel05" data-slide-to="{{ forloop.counter0 }}"></li>
+			{% endif %}
+		      {% endfor %}
                     </ol>
                </div>
-
+                        
             </div><!-- Termina MultiCarousel -->
         </section><!-- Termina categoria05 -->
+	{% endif %}
 
     </div><!-- Termina contenedor-fluid -->
+    {% endblock %}    
 
-{% endblock %}

@@ -1,0 +1,228 @@
+{% extend "public_html/base.html" %}
+
+{% block contenido %}
+    <!-- ============================================================== -->
+    <!-- [INICIA CONTENIDO] (No modificar nada antes de esta línea)     -->
+
+   <div class="container modulos">
+       <div class="row iguales">
+           <div class="sidebar col-sm-3">
+              <header>
+                <h3><img src="static/img/cat_icono_planeacion_v_ngo.svg" height="35" alt="">PLANEACIÓN</h3>
+              </header>
+              <hr>
+              <aside>
+                   <ul>
+                      <li>Analisis FODA</li>
+                      <ul>
+                        <li class="activo"><a href="#">Descripción</a></li>
+                      </ul>
+                      <li>Leccion 1: Preparando el Análisis FODA.</li>
+                      <ul>
+                        <li><a href="#">Descripción</a></li>
+                        <li><a href="#">Actividad</a></li>
+                      </ul>
+                      <li>Leccion 2: Define lo que analizarás.</li>
+                       <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 3: Recopila la información que necesites.</li>
+                       <ul>
+                           <li><a href="leccion3.html">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 4: Entendiendo el análisis FODA.</li>
+                       <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 5: Comenzando el Análisis FODA</li>
+                       <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 6: Realizando el análisis FODA</li>
+                       <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 7: Comencemos por las Fortalezas</li>
+                        <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 7.1: Ejemplifiquemos</li>
+                       <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 7.2: ¡Ahora aplica!</li>
+                        <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 8: Oportunidades</li>
+                        <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 8.1: Regresemos a nuestro ejemplo</li>
+                       <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 8.2:¡Ahora aplica!</li>
+                       <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 9:Debilidades</li>
+                       <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 10:Amenazas</li>
+                        <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                       <li>Leccion 11:Recuerda</li>
+                        <ul>
+                           <li><a href="#">Descripción</a></li>
+                           <li><a href="#">Actividad</a></li>
+                       </ul>
+                   </ul>
+              </aside>
+          </div><!-- termina sidebar -->
+
+
+           <div class="relacion col-sm-9">
+                <ol class="breadcrumb">
+                  <li><a class="act-texa" href="">
+                      <img src="static/img/cat_icono_planeacion_v_ngo.svg" height="20" alt="">
+                      Planeación</a>
+                  </li>
+                 <li><a class="act-texa" href="#">Análisis FODA</a></li>
+                  <li><a class="act-texa" href="#">Lección N</a></li>
+                  <li class="active">Actividad</li>
+                </ol>
+               <div class="row-concepto col-md-offset-1 col-md-10 text-justify ">
+               <p>Antes que nada, tienes que definir con mucha claridad si lo que te interesa analizar es un proyecto en particular o la organización que tienes. Aquí nos enfocaremos en un solo objetivo de tu organización o de tu proyecto, para simplificar el ejercicio que te proponemos. De cualquier manera, es muy importante que a lo largo de todo el análisis te centres en sólo un proyecto o sólo en tu organización.</p>
+                <p>¿Quieres analizar un proyecto o quieres analizar a tu organización?</p>
+
+               <div class="atexto brojo">
+                  <div class="options">
+                    <button onClick="transform('bold', null)">
+                      <i class="fas fa-bold"></i>
+                    </button>
+                    <button onClick="transform('italic', null)">
+                      <i class="fas fa-italic"></i>
+                    </button>
+                    <button onClick="transform('strikeThrough', null)">
+                      <i class="fas fa-strikethrough"></i>
+                    </button>
+                    <button onClick="transform('underline', null)">
+                      <i class="fas fa-underline"></i>
+                    </button>
+                    <div class="seperator"></div>
+                    <button onClick="transform('justifyLeft', null)">
+                      <i class="fas fa-align-left"></i>
+                    </button>
+                    <button onClick="transform('justifyCenter', null)">
+                      <i class="fas fa-align-center"></i>
+                    </button>
+                    <button onClick="transform('justifyRight', null)">
+                      <i class="fas fa-align-right"></i>
+                    </button>
+                    <div class="seperator"></div>
+                    <button onClick="transform('insertOrderedList', null)">
+                      <i class="fas fa-list-ol"></i>
+                    </button>
+                    <button onClick="transform('insertUnorderedList', null)">
+                      <i class="fas fa-list-ul"></i>
+                    </button>
+                    <div class="seperator"></div>
+                    <select onChange="transform('fontName', this.value)">
+                      <option disabled default>Font</option>
+                      <option value="Times New Roman">Times</option>
+                      <option value="Arial">Arial</option>
+                      <option value="Courier New">Courier New</option>
+                      <option value="Tahoma">Tahoma</option>
+                      <option value="Arial">Verdana</option>
+                    </select>
+                    <div class="seperator"></div>
+                    <input type="number" onChange="transform('fontSize', this.value)" value="3" max="7" min="1">
+                  </div><!-- termina barra de botones -->
+                  <form action="#" class="clearfix" method="post">
+                      <textarea class="form-control" name="respuesta" rows="5">No has ingresado tu aporte</textarea>
+                      <input class="btn btn-verde pull-right" type="submit" value="GUARDAR" />
+                  </form>
+    </div>
+
+
+               <div class="atexto bverde">
+                  <div class="options">
+                    <button onClick="transform('bold', null)">
+                      <i class="fas fa-bold"></i>
+                    </button>
+                    <button onClick="transform('italic', null)">
+                      <i class="fas fa-italic"></i>
+                    </button>
+                    <button onClick="transform('strikeThrough', null)">
+                      <i class="fas fa-strikethrough"></i>
+                    </button>
+                    <button onClick="transform('underline', null)">
+                      <i class="fas fa-underline"></i>
+                    </button>
+                    <div class="seperator"></div>
+                    <button onClick="transform('justifyLeft', null)">
+                      <i class="fas fa-align-left"></i>
+                    </button>
+                    <button onClick="transform('justifyCenter', null)">
+                      <i class="fas fa-align-center"></i>
+                    </button>
+                    <button onClick="transform('justifyRight', null)">
+                      <i class="fas fa-align-right"></i>
+                    </button>
+                    <div class="seperator"></div>
+                    <button onClick="transform('insertOrderedList', null)">
+                      <i class="fas fa-list-ol"></i>
+                    </button>
+                    <button onClick="transform('insertUnorderedList', null)">
+                      <i class="fas fa-list-ul"></i>
+                    </button>
+                    <div class="seperator"></div>
+                    <select onChange="transform('fontName', this.value)">
+                      <option disabled default>Font</option>
+                      <option value="Times New Roman">Times</option>
+                      <option value="Arial">Arial</option>
+                      <option value="Courier New">Courier New</option>
+                      <option value="Tahoma">Tahoma</option>
+                      <option value="Arial">Verdana</option>
+                    </select>
+                    <div class="seperator"></div>
+                      <input type="number" onChange="transform('fontSize', this.value)" value="3" max="7" min="1">
+                  </div><!-- termina barra de botones -->
+                  <form action="#" class="clearfix" method="post">
+                      <textarea class="form-control" name="respuesta" rows="5">Con cualquier texto</textarea>
+                      <input class="btn btn-verde pull-right" type="submit" value="GUARDAR" />
+                  </form>
+               </div>
+
+               <!-- ===== <!-- BOTONES     -->
+               <nav class="navegacion clearfix">
+                 <a class="btn btn-verde" href="">ANTERIOR</a>
+                 <a class="btn btn-verde pull-right" href="">SIGUIENTE</a>
+               </nav>
+
+
+               </div>
+           </div>
+           </div>
+       </div>
+
+
+    <!-- [TERMINA CONTENIDO] (No modificar nada después de esta línea)  -->
+    <!-- ============================================================== -->
+{% endblock %}

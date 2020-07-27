@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
-<html lang="es">
-
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +8,9 @@
     <link rel="icon" type="image/png" href="/static/img/favicon.ico"/>
     <!-- Bootstrap -->
     <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
-        crossorigin="anonymous">
+  href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,12 +18,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Roboto"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/static/css/main.css">
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/static/css/main.css" />
 </head>
-
 <body>
-
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -37,18 +33,25 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img src="/static/img/Proyectate-logo.svg" height="20" alt="PROYECTATE.MX-logo"></a>
-            </div>
+                <a class="navbar-brand" href="/">
+                  <img src="/static/img/Proyectate-logo.svg" height="20"
+                  alt="PROYECTATE.MX-logo"></a>
+            </div><!-- Termina navbar-header -->
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">INICIO</a></li>
-                    <li><a href="/acercade.html">ACERCA DE</a></li>
-                    <li><a href="/categorias">CATEGORIAS</a></li>
+                    <li {% if request.path == "/" %}class="active"{% endif %}>
+                      <a href="/">INICIO</a></li>
+                    <li {% if request.path == "/acercade.html" %}class="active"{% endif %}>
+                      <a href="/acercade.html">ACERCA DE</a></li>
+                    <li {% if request.path == "/categorias/" or "/lecciones/" in request.path or "/actividades/" in request.path %}class="active"{% endif %}>
+                      <a href="/categorias">CATEGORIAS</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right mr-50">
-                    <a class="btn btn-verde navbar-btn" href="/categorias">COMENZAR</a>
-                    <a class="btn btn-verde navbar-btn" href="/loginreg.html">LOGIN</a>
-                </ul>
+                <div class="navbar-form navbar-right">
+                  <a class="btn btn-verde"
+                     href="categorias.html">COMENZAR</a>
+                  <a class="btn btn-verde"
+                     href="loginreg.html">LOGIN</a>
+                </div>
             </div><!-- Termina nav-collapse -->
         </div><!-- Termina container-fluid -->
     </nav><!-- Termina navbar -->

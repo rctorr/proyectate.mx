@@ -856,9 +856,7 @@ Color de fondo para la descripción: #eeeeee
 .atexto {
   background-color: #fff;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   border-radius: 10px;
   border: 2px solid #ccc;
   box-shadow: 0px 0px 5px #ccc;

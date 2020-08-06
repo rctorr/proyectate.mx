@@ -876,21 +876,13 @@ Color de fondo para la descripción: #eeeeee
 .atexto textarea {
     margin-bottom: 5px;
 }
+.atexto textarea:focus {
+    border-color: #ccc;
+    box-shadow: none;
+}
 .brojo textarea {
     color: #e37474;
 }
-/*
-input[type="text"] {
-  height: 20pt;
-  width: 100%;
-  padding: 0;
-  border: 0;
-  outline: none;
-  font-size: 14px;
-  margin-top: 5pt;
-    
-}
-*/
 .options {
   width: 100%;
   height: 30pt;
@@ -903,39 +895,6 @@ background-color: #fff;
   border-left: 1px solid #ddd;
   height: 20px;
     }
-/*
-button {
-  margin: 0;
-  padding: 0;
-  height: 30pt;
-  width: 30pt;
-  background-color: #fff;
-  border: 0;
-  cursor: pointer;
-  color: #000;
-}
-button:active {
-  color: #333;
-}
-*/
-/*
-select {
-  height: 30pt;
-  -webkit-appearance: none;
-  border: 0;
-  padding-left: 5pt;
-  padding-right: 5pt;
-  outline: none;
-}
-input[type="number"] {
-  height: 30pt;
-  border: 0;
-  padding: 0;
-  padding-left: 5pt;
-  padding-right: 5pt;
-  outline: none;
-    }
-*/
 /**********Termina Actividad texto *************/
 
 

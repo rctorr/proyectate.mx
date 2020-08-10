@@ -209,6 +209,11 @@
                   <form action="#" class="clearfix" method="post">
                       <textarea class="form-control" name="respuesta" rows="5"
                         placeholder="No has ingresado tu aporte"></textarea>
+                      <a tabindex="0" class="btn btn-verde pull-right" role="button"
+                         data-toggle="popover" data-trigger="focus" data-placement="top"
+                         title="¿Aún no registrado?"
+                         data-content="Recuerda que sólo los usuarios registrados pueden guardar su proyecto">
+                         GUARDAR</a>
                       <input class="btn btn-verde pull-right" type="submit" value="GUARDAR" />
                   </form>
     </div>
@@ -316,8 +321,10 @@
     <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 <!-- partial -->
   <script  src="../public_html/static/js/script.js"></script> 
-
-    
-    
+  <script>
+      $(function () {
+          $('[data-toggle="popover"]').popover()
+      })
+  </script>  
 </body>
 </html>

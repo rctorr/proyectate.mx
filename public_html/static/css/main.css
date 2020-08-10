@@ -893,6 +893,9 @@ background-color: #fff;
   border-left: 1px solid #ddd;
   height: 20px;
     }
+a.btn-verde {
+    border-color: #ccc;
+}
 /**********Termina Actividad texto *************/
 
 

@@ -45,12 +45,22 @@
                     <li><a href="acercade.html">ACERCA DE</a></li>
                     <li><a href="categorias.html">CATEGORIAS</a></li>
                 </ul>
-                <ul class="navbar-form navbar-right">
-                    <a class="btn btn-verde"
-                       href="categorias.html">COMENZAR</a>
-                    <a class="btn btn-verde"
-                       href="loginreg.html">LOGIN</a>
+                <a class="btn btn-verde navbar-btn navbar-right visible-xs-inline-block" href="categorias.html">COMENZAR</a>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle pt-10" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <img src="static/img/user_icon.png" alt="avatar del usuario" >
+                      <span class="caret"></span></a>
+                    <ul class="dropdown-menu navbar-inverse">
+                      <li><a>urser@msnhotmail.com</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="perfil.html"><span class="glyphicon glyphicon-cog"> Perfil</span></a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="index.html"><span class="glyphicon glyphicon-log-out"> Salir</span></a></li>
+                    </ul>
+                  </li>
                 </ul>
+                <a class="btn btn-verde navbar-btn navbar-right hidden-xs" href="categorias.html">COMENZAR</a>
             </div><!-- Termina nav-collapse -->
         </div><!-- Termina container-fluid -->
     </nav><!-- Termina navbar -->

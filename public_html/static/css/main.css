@@ -601,6 +601,18 @@ Color de fondo para la descripción: #eeeeee
 .navbar-inverse .navbar-nav > .active > a {
     background-color: var(--verde);
 }
+/*** Colores para las opciones de un submenu ***/
+.dropdown-menu > li > a {
+    color: #9d9d9d;
+}
+.dropdown-menu > li > a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+/*** Corregir altura de el áre de visualización para la barra de menú en móviles ***/
+.navbar-fixed-top .navbar-collapse {
+    max-height: none;
+}
 /*** Estilos de márgenes predefinidos ***/
 .mt-0 {
     margin-top: 0 !important;
@@ -659,6 +671,9 @@ Color de fondo para la descripción: #eeeeee
 }
 .pt-0 {
     padding-top: 0;
+}
+.pt-10 {
+    padding-top: 10px;
 }
 .pb-0 {
     padding-bottom: 0;
@@ -1011,6 +1026,11 @@ Actividad de relación
   Ajustes responsivo
 *************************************************************************/
 @media (min-width: 768px) {
+    /*** Estilos predefinidos adicionales a bootstrap ***/
+    .pt-10 {
+        padding-top: 10px !important;
+    }
+
     /*** Estilos para bloques o secciones ***/
     .section {
         padding: 40px 50px;  /* Se asigna el nuevo padding */

@@ -641,6 +641,9 @@ Color de fondo para la descripción: #eeeeee
 .mb-25 {
     margin-bottom: 25px;
 }
+.mr-10 {
+    margin-right: 10px !important;
+}
 .mr-50 {
     margin-right: 0.5em !important;
 }

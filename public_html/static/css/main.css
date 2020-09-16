@@ -1,7 +1,7 @@
 /* Variables */
 :root {
     --verde: #66B32E;
-    --carousel-item-ancho: 180px;
+    --carousel-item-ancho: 250px;
     --carousel-item-margen: 5px;
     --carousel-num-items: 30;
 }
@@ -920,19 +920,24 @@ a.btn-verde {
 /***********************************************************************
 Actividad de opcion
 ************************************************************************/
-.custom-radio1, .custom-radio2, .custom-radio3 {
+.opcion-inactiva, .opcion-correcta, .opcion-incorrecta {
     background-color: #e2e2e2;
     border-radius: 15px;
     padding: 10px;
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
     font-weight: bold;
 }
 
-.custom-radio2 {
+.opcion-texto {
+    margin-left: 10px;
+    width: 95%;
+}
+
+.opcion-correcta {
     background-color: #b8e3a6;
 }
 
-.custom-radio3 {
+.custom-incorrecta {
     background-color: #e37474;
 }
 

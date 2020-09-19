@@ -417,7 +417,7 @@ footer a.btn:hover {
 }
 .registro-titulo::after{
     background-image: url("../img/brochazo_roja_login.svg");
-    }
+}
 
 input:invalid {
     border-color: red;

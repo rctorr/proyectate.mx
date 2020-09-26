@@ -24,3 +24,17 @@ function rightClick(obj) {
     slider.css('transform', "translateX("+ -190 +"px)");    
 }
 
+/* Funciones para accional el menú lateral en la página de módulos */
+function muestra_sidebar() {
+    var sidebar = document.getElementById("sidebar");
+    
+    sidebar.style.transform = "translateX(0px)";
+}
+function oculta_sidebar() {
+    var sidebar = document.getElementById("sidebar");
+    var ancho = window.innerWidth;
+    
+    if (ancho < 768) {  /* Sólo ocultamos la barra lateral cuando son móviles */
+        sidebar.style.transform = "translateX(-100%)";
+    }
+}

@@ -1,11 +1,10 @@
 /* Variables */
 :root {
     --verde: #66B32E;
-    --carousel-item-ancho: 180px;
+    --carousel-item-ancho: 250px;
     --carousel-item-margen: 5px;
     --carousel-num-items: 30;
 }
-
 body {
     background-color: #ffffff;
     font-family: "Roboto";
@@ -15,7 +14,10 @@ body {
     padding-top: 50px;
 }
 
-/* Estilos para el pié de página */
+
+/*++++++++++ Estilos para el pié de página +++++++++++++++*/
+
+
 footer {
     width: 100%;
     padding: 15px 0px;
@@ -24,21 +26,17 @@ footer {
     color: #fff;
     position: relative;
 }
-
 #redes-sociales {
     margin: 0px auto 20px;
     text-align: center;
 }
-
 #redes-sociales a {
     display: inline-block;
     margin: 0px 5px;
 }
-
 footer p {
     text-align: center;
 }
-
 footer a {
     color: #fff;
     text-decoration: underline;
@@ -47,7 +45,10 @@ footer a.btn:hover {
     color: var(--verde);
 }
 
-/*** Estilos para bloques o secciones ***/
+
+/*++++++++++ Estilos para bloques o secciones +++++++++++++++*/
+
+
 .section {
     margin: 0px -15px;  /* Se anula el padding del container */
     padding: 20px 20px;  /* Se asigna el nuevo padding */
@@ -61,7 +62,10 @@ footer a.btn:hover {
     clear: both;
 }
 
+
 /*++++++++++ Estilos para inicio  +++++++++++++++*/
+
+
 #index01 {
     position: relative;
     z-index: 0;
@@ -122,6 +126,8 @@ footer a.btn:hover {
 
 
 /*********** Estilos para Acerca de *************/
+
+
 #acercade02 {
     position: relative;
     z-index: 0;
@@ -164,6 +170,8 @@ footer a.btn:hover {
 
 
 /*++++++++++ Estilos para legal  +++++++++++++++*/
+
+
 .marcadeagua {
     background-color: #fff;
     background-image: url("../img/marcadeagua_legal.svg");
@@ -213,7 +221,11 @@ footer a.btn:hover {
     background-repeat: no-repeat;
 }
 
+
+
 /*++++++++++ Estilos para cateogrías +++++++++++++++*/
+
+
 .categoria {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -364,10 +376,15 @@ footer a.btn:hover {
 
 
 /********** Estilos para Login *************/
-.login {
-    background-color: #e9e9e9;
+#msjPassError1, #msjPassError2 {
+    display: none;
 }
-.fondo-gris-form {
+
+.login {
+    background-color: #dddedd;
+    padding: 30px 30px 0px;
+}
+.fondo-form {
     background-color: #fff;
     padding: 0px 35px 35px 35px;
     border-radius: 20px;
@@ -375,36 +392,49 @@ footer a.btn:hover {
     margin-bottom: 70px;
 }
 
-.login-titulo, .login-titulo-dos {
+.login-titulo, .registro-titulo {
     position: relative;
     height: auto;
     z-index: 0;
     text-align: center;
     margin-top: 0px;
-    padding-bottom: -100px;  
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     color: #fff;
 }
 
-.login-titulo::after, .login-titulo-dos::after{
+.login-titulo::after, .registro-titulo::after{
     content: "";
     display: block;
     position: absolute;
     left: -60px;
     right: -60px;
-    top:-100px;
+    top:-70px;
     bottom: 0px;
     background-image: url("../img/brochazo_verde-login.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: -1
 }
-.login-titulo-dos::after{
+.registro-titulo::after{
     background-image: url("../img/brochazo_roja_login.svg");
-    }
-#msjPassError1, #msjPassError2 {
-    display: none;
 }
+
+input:invalid {
+    border-color: red;
+}
+input,
+input:valid {
+    border-color: #ccc;
+}
+.login .link {
+    background-color: transparent;
+    border: none;
+    color: #337ab7;
+}
+.login .link:hover {
+    text-decoration: underline;
+}
+
 /********** Estilos para módulos *************/
 
 /*
@@ -413,11 +443,27 @@ Color de fondo para el encabezado del sidebar: #f5f5f5
 Color fondo lista de lecciones: #fbfbfb
 Color lección activa: color: #fbfbfb, bg: #f5f5f5
 Color de fondo para la descripción: #eeeeee
-*/ 
+*/
+.lateral {
+    padding-top: 20px;
+    background-color: #eeeeee;
+    width: 100%;
+}
+.lateral .navbar-lateral {
+    padding: 5px;
+    background-color: #fff;
+    color: #66b32e;
+    width: auto;
+    display: inline-block;
+}
 
 .sidebar {
-    background-color: #f5f5f5;
-    vertical-align: middle;
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 1;
 }
 .sidebar header, .sidebar aside {
     margin: 0px -15px;
@@ -465,14 +511,15 @@ Color de fondo para la descripción: #eeeeee
     position: absolute;
     right: 10px;
     font-weight: bold;
+    
 }
-.desc-leccion {
+.relacion {
     background-color: #eeeeee;
     padding-top: 30px;
     padding-bottom: 30px;
     padding: 30px 30px;
 }
-.desc-leccion p {
+.relacion p {
     text-align: justify;
 }
 
@@ -481,13 +528,13 @@ Color de fondo para la descripción: #eeeeee
  Estilos adicionales a bootstrap para proyectate.mx
 **********************************************************************/
 
+
 /*** Botones ***/
 .btn-verde {
     color: #fff;
     background-color: #65b32e;
     border-color: #559627;
 }
-
 .btn-verde:hover {
     color: #fff;
     background-color: #549526;
@@ -498,7 +545,6 @@ Color de fondo para la descripción: #eeeeee
     background-color: #333;
     border-color: #222;
 }
-
 .btn-negro:hover {
     color: #fff;
     background-color: #000;
@@ -538,7 +584,7 @@ Color de fondo para la descripción: #eeeeee
     background-color: #e73d25;
 }
 .bg-gray {
-    background-color: #eaeaea;    
+    background-color: #eaeaea;
 }
 /*** Colores de texto ***/
 .text-white {
@@ -554,6 +600,18 @@ Color de fondo para la descripción: #eeeeee
 /*** Color de fondo en las opciones del menú ***/
 .navbar-inverse .navbar-nav > .active > a {
     background-color: var(--verde);
+}
+/*** Colores para las opciones de un submenu ***/
+.dropdown-menu > li > a {
+    color: #9d9d9d;
+}
+.dropdown-menu > li > a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+/*** Corregir altura de el áre de visualización para la barra de menú en móviles ***/
+.navbar-fixed-top .navbar-collapse {
+    max-height: none;
 }
 /*** Estilos de márgenes predefinidos ***/
 .mt-0 {
@@ -573,6 +631,18 @@ Color de fondo para la descripción: #eeeeee
 }
 .mb-0 {
     margin-bottom: 0;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.mr-10 {
+    margin-right: 10px !important;
 }
 .mr-50 {
     margin-right: 0.5em !important;
@@ -605,6 +675,9 @@ Color de fondo para la descripción: #eeeeee
 .pt-0 {
     padding-top: 0;
 }
+.pt-10 {
+    padding-top: 10px;
+}
 .pb-0 {
     padding-bottom: 0;
 }
@@ -624,7 +697,6 @@ Color de fondo para la descripción: #eeeeee
     justify-content: center;
 }
 
-/*Estilos añadidoa para login?*/
 /*** Estilos para bloques o secciones ***/
 .section {
     margin: 0px -15px;  /* Se anula el padding del container */
@@ -635,9 +707,6 @@ Color de fondo para la descripción: #eeeeee
     padding-top: 0px;
     padding-bottom: 0px;
 }
-/**************************************
-  Estilos para componentes
-**************************************/
 
 /**************************************
   Corrigiendo estilos de bootstrap
@@ -664,10 +733,12 @@ Color de fondo para la descripción: #eeeeee
     .navbar-collapse.collapse.in {
         display: block!important;
     }
+    /*
     .navbar-collapse *[class*='navbar-'] {
         float: none!important;
         margin: 7.5px -15px;
     }
+    */
     .navbar-nav > li {
         float: none;
     }
@@ -676,69 +747,298 @@ Color de fondo para la descripción: #eeeeee
         padding-bottom: 10px;
     }
 }
-/*******************************************************************
-        login
-***********************************************************/
-.login {
-    background-color: #dddedd; 
-    padding: 30px 30px 0px;
-}
-.fondo-gris-form {
-    background-color: #fff;
-    padding: 0px 35px 35px 35px;
-    border-radius: 20px;
-    margin-top: 100px;
-    margin-bottom: 70px;
-}
 
-.login-titulo, .login-titulo-dos {
+/**********Perfil*************/
+.perfil-titulo {
     position: relative;
-    height: auto;
-    z-index: 0;
-    text-align: center;
-    margin-top: 0px;
-    padding-bottom: -100px;  
-    padding-bottom: 80px;
-    color: #fff;
+    height: 1px; /* Se necesita 1px de altura cuando menos para aplicar márgenes */
+    margin-bottom: 80px;
 }
-
-.login-titulo::after, .login-titulo-dos::after{
+.perfil-titulo::after{
     content: "";
     display: block;
     position: absolute;
     left: -60px;
     right: -60px;
-    top:-100px;
-    bottom: 0px;
-    background-image: url("../img/brochazo_verde-login.svg");
+    top:-80px;
+    bottom: -80px;
+    background-image: url("../img/ajustesperfil_head-xs.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    z-index: -1
 }
-.login-titulo-dos::after{
-    background-image: url("../img/brochazo_roja_login.svg");
-    }
 
-input:invalid {
-    border-color: red;
+
+.tarjeta {
+    margin-bottom: 15px;
 }
-input,
-input:valid {
+.avatar {
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
+  width: 80%; /* Define el ancho del avatar en porcentaje */
+}
+.mascara {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  background-color: rgba(0, 180, 0, 0.45);
+  padding: 10px 0px;
+}
+
+.perfil .input-nombre {
+    width: 100%;
+    font-size: calc(1em + 0.2vw);
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0, 0.075);
+    border-bottom: 2px solid var(--verde);
+    margin-bottom: 15px;
+}
+
+.perfil .input-nombre:focus {
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0, 0.075), 0 3px 5px rgba(102,179,46,0.6);
+}
+
+.perfil .form-group {
+    padding: 4px 0px;
+}
+.perfil .form-control {
+    border-radius: 0px;
+}
+.perfil .form-control:focus {
+    border-color: var(--verde);
+    box-shadow: inset 0px 1px 1px 1px rgba(0,0,0, 0.075), 0 3px 5px rgba(102,179,46,0.6);
+}
+.perfil .etiqueta-normal {
+    font-weight: normal;
+}
+
+.btn-gc {
+    height: auto;
+    width: 100%;
+    border: none;
+}
+
+
+.btn-gc:hover {
+    color: #fff;
+    background-color: #549526;
+    border-color: #498221;
+}
+/**********Termina Perfil*************/
+
+
+/**********Estilos de sidebar actividades *************/
+
+.sidebar aside ul ul li.activo {
+    background-color: #66b32e;
+    position: relative;
+}
+
+.sidebar aside ul ul li a {
+    color: #66b32e;
+}
+
+.desc-leccion p {
+    text-align: justify;
+}
+.navegacion {
+    margin-bottom: 5px;
+}
+
+.btn-izquierda {
+    float: left;
+    margin-top: 20px;
+     margin-bottom: 20px;
+   
+ }
+.btn-derecha {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/**********Termina estilos sidebar actividades*************/
+
+
+/**********- Estilos de actividad de texto *************/
+
+.act-texa {
+    color: #66b32e;
+}
+
+.row-concepto {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.atexto {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0px 0px 5px #ccc;
+  margin-bottom: 30px;
+    
+}
+.bverde {
+  border-color: #4b9418;
+  box-shadow: 0px 0px 5px #4b9418;
+}
+.brojo {
+  border-color: #e37474;
+  box-shadow: 0px 0px 5px #e37474;
+}
+.atexto textarea {
+    margin-bottom: 5px;
+}
+.atexto textarea:focus {
+    border-color: #ccc;
+    box-shadow: none;
+}
+.brojo textarea {
+    color: #e37474;
+}
+.options {
+  width: 100%;
+  height: 30pt;
+  margin-top: 5pt;
+  border-top: 1px solid #ddd;
+background-color: #fff;
+}
+.seperator {
+  display: inline;
+  border-left: 1px solid #ddd;
+  height: 20px;
+    }
+a.btn-verde {
     border-color: #ccc;
 }
-.login .link {
-    background-color: transparent;
-    border: none;
-    color: #337ab7;
-}
-.login .link:hover {
-    text-decoration: underline;
+/**********Termina Actividad texto *************/
+
+
+/***********************************************************************
+Actividad de opcion
+************************************************************************/
+.opcion-inactiva, .opcion-correcta, .opcion-incorrecta {
+    background-color: #e2e2e2;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px; 
+    font-weight: bold;
 }
 
-/*******************************************************************************
+.opcion-texto {
+    margin-left: 10px;
+    width: 95%;
+}
+
+.opcion-correcta {
+    background-color: #b8e3a6;
+}
+
+.custom-incorrecta {
+    background-color: #e37474;
+}
+
+.msn-correcto {
+    color: #4b9418;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+.msn-incorrecto {
+    color: #e37474;
+    padding: 5px;
+    margin-left: 15px;
+}
+/**********Termina Actividad de opcion *************/
+
+
+/************************************************************************
+Actividad de relación
+************************************************************************/
+.concept {
+    margin-bottom: 20px;
+}
+
+.desc-trj {
+    margin-bottom: 35px;
+}
+
+.card-concepto{
+    background-color: #fafafa;
+    height: 300px;
+    margin-bottom: 25px;
+    padding: 10px 10px; 
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #8b8b8b;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.card-definicion {
+    background-color: #fafafa;
+    height: 300px;
+    margin-bottom: 25px;
+    padding: 20px 20px; 
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #8b8b8b;
+}
+
+.c-true {
+    border:#b8e3a6 5px solid; 
+    border-radius: 15px;
+    color: #4b9418;
+    background-color: #fafafa;
+}
+
+.c-false {
+    border:#e37474 5px solid; 
+    border-radius: 15px;
+    color: #941824;
+    background-color: #ffffff;
+    
+}
+
+.c-bloq {
+    border:#616161 5px solid; 
+    border-radius: 15px;
+    color: #313131;
+    background-color: white;
+    
+}
+
+.tarj-numero {
+    margin-top: 0px;
+    float: left;
+    padding: 0px 20px 0px 5px;
+    
+}
+
+
+.card-concepto .tarj-numero {
+    margin-top: 0px;
+    padding: 5px;
+    position: absolute;
+    top:5px;
+    left: 5px;
+}
+
+/**********Termina Actividad relacion *************/
+
+/************************************************************************
   Ajustes responsivo
-*******************************************************************************/
+*************************************************************************/
 @media (min-width: 768px) {
+    /*** Estilos predefinidos adicionales a bootstrap ***/
+    .pt-10 {
+        padding-top: 10px !important;
+    }
+
     /*** Estilos para bloques o secciones ***/
     .section {
         padding: 40px 50px;  /* Se asigna el nuevo padding */
@@ -785,17 +1085,48 @@ input:valid {
     .brochazo-rojo::after {
         right: -35px;
     }
-    /*Ajustes para login*/
+    /*************Ajustes para login******************/
     .login {
         padding: 30px 50px 0px;
     }
-    /*** Estilos relacionados con cateogrías ***/
+    .login-titulo, .registro-titulo {
+	margin-bottom: 20px;
+    }
+    .login-titulo::after, .registro-titulo::after{
+        left: -80px;
+        right: -80px;
+        top:-70px;
+        bottom: 0px;
+    }
+    /************ Estilos relacionados con cateogrías *************/
+    
     .categoria .detalle .logo {
         text-align: right;
     }
     .categoria .detalle .descripcion {
         text-align: left;
     }
+    /*************Ajustes para perfil******************/
+    .perfil-titulo::after{
+	    background-image: url("../img/ajustesperfil_head.png");
+    }
+    .perfil .input-nombre {
+        margin-top: 80px;
+        font-size: calc(1em + 0.5vw);
+        height: auto;
+    }
+    /*** ajustes para la página base-modulo.html ***/
+    .lateral {
+        display: none;
+    }
+    .sidebar {
+        transform: translateX(0px);
+        position: inherit;
+        top: none;
+        left: none;
+        z-index: 0;
+    }
+    
 }
 
 @media (min-width: 992px) {
@@ -877,9 +1208,13 @@ input:valid {
     #categoria05 {
         background-image: url("../img/bg_comunicacion.jpg");
         background-size: cover;
-    }    
+    }
     #categoria05::before {
         background-color: rgba(0,0,0,0);
+    }
+    /*************Ajustes para perfil******************/
+    .perfil .input-nombre {
+        margin-top: 50px;
     }
 }
 

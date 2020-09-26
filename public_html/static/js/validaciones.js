@@ -46,3 +46,10 @@ function recuperacontrasenia() {
     }
 }
 
+function activarBtn(){
+    var lista = document.getElementById("pais").value;
+    var boton = document.getElementById("registrate");
+    if(lista != " "){
+        boton.disabled = false;
+    }
+}
